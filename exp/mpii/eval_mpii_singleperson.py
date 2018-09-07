@@ -54,5 +54,5 @@ mpii_val = BatchLoader(mpii, x_dictkeys=['frame'],
 printcn(OKBLUE, 'Pre-loading MPII validation data...')
 [x_val], [p_val, afmat_val, head_val] = mpii_val[0]
 
-eval_singleperson_pckh(model, x_val, p_val, afmat_val, head_val)
+eval_singleperson_pckh(model, x_val, p_val[:,:,0:2], afmat_val, head_val)
 
