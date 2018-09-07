@@ -16,6 +16,7 @@ tags
 # Ignore input/output dirs
 input
 output
+trained
 
 # Ignore bin, lib dirs
 bin
