@@ -208,11 +208,19 @@ def transform_pose_sequence(A, poses, inverse=True):
 
     return y
 
-def normalize_channels(frame, channel_power=None):
+
+def normalize_channels(frame, channel_power=1):
+
+    if type(channel_power) is not int:
+        assert len(channel_power) == 3, 'channel_power expected to be int or ' \
+                + 'tuple/list with len=3, {} given.'.format(channel_power)
 
     frame /= 255.
 
-    if channel_power is not None:
+    if type(channel_power) is int:
+        if channel_power != 1:
+            frame = np.power(frame, channel_power)
+    else:
         for c in range(3):
             if channel_power[c] != 1:
                 frame[:,:, c] = np.power(frame[:,:, c], channel_power[c])

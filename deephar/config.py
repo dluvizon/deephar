@@ -1,19 +1,26 @@
 import numpy as np
 
-# Input frame configuration
+import keras.backend as K
+K.set_image_data_format('channels_last')
 
 class DataConfig(object):
+    """Input frame configuration and data augmentation setup."""
+
     def __init__(self, crop_resolution=(256, 256), image_num_channels=(3,),
             angles=[0], fixed_angle=0,
             scales=[1], fixed_scale=1,
             trans_x=[0], fixed_trans_x=0,
             trans_y=[0], fixed_trans_y=0,
             hflips=[0, 1], fixed_hflip=0,
-            chpower=0.01*np.array(range(90, 110+1, 5)), fixed_chpower=1,
+            chpower=0.01*np.array(range(90, 110+1, 2)), fixed_chpower=1,
             subsampling=[1], fixed_subsampling=1):
 
         self.crop_resolution = crop_resolution
         self.image_num_channels = image_num_channels
+        if K.image_data_format() == 'channels_last':
+            self.input_shape = crop_resolution + image_num_channels
+        else:
+            self.input_shape = image_num_channels + crop_resolution
         self.angles = angles
         self.fixed_angle = fixed_angle
         self.scales = scales
@@ -30,13 +37,13 @@ class DataConfig(object):
         self.fixed_subsampling = fixed_subsampling
 
     def get_fixed_config(self):
-        return (self.fixed_angle,
-                self.fixed_scale,
-                self.fixed_trans_x,
-                self.fixed_trans_y,
-                self.fixed_hflip,
-                self.fixed_chpower,
-                self.fixed_subsampling)
+        return {'angle': self.fixed_angle,
+                'scale': self.fixed_scale,
+                'transx': self.fixed_trans_x,
+                'transy': self.fixed_trans_y,
+                'hflip': self.fixed_hflip,
+                'chpower': self.fixed_chpower,
+                'subspl': self.fixed_subsampling}
 
     def random_data_generator(self):
         angle = DataConfig._getrand(self.angles)
@@ -44,13 +51,18 @@ class DataConfig(object):
         trans_x = DataConfig._getrand(self.trans_x)
         trans_y = DataConfig._getrand(self.trans_y)
         hflip = DataConfig._getrand(self.hflips)
-        chpower = [1, 1, 1]
-        chpower[0] = DataConfig._getrand(self.chpower)
-        chpower[1] = DataConfig._getrand(self.chpower)
-        chpower[2] = DataConfig._getrand(self.chpower)
+        chpower = (DataConfig._getrand(self.chpower),
+                DataConfig._getrand(self.chpower),
+                DataConfig._getrand(self.chpower))
         subsampling = DataConfig._getrand(self.subsampling)
 
-        return angle, scale, trans_x, trans_y, hflip, chpower, subsampling
+        return {'angle': angle,
+                'scale': scale,
+                'transx': trans_x,
+                'transy': trans_y,
+                'hflip': hflip,
+                'chpower': chpower,
+                'subspl': subsampling}
 
     @staticmethod
     def _getrand(x):
