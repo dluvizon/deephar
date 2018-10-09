@@ -5,6 +5,9 @@ class _pa16j():
     joints on the spine.
     """
     num_joints = 16
+    joint_names = ['pelvis', 'thorax', 'neck', 'head',
+            'r_shoul', 'l_shoul', 'r_elb', 'l_elb', 'r_wrist', 'l_wrist',
+            'r_hip', 'l_hip', 'r_knww', 'l_knee', 'r_ankle', 'l_ankle']
 
     """Horizontal flip mapping"""
     map_hflip = [0, 1, 2, 3, 5, 4, 7, 6, 9, 8, 11, 10, 13, 12, 15, 14]

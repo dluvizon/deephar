@@ -1,15 +1,33 @@
-## deephar - Deep Human Action Recognition
+# Deep Human Action Recognition
 
-This software is provided as supplementary material for the CVPR'18 paper:
+This software is provided as a supplementary material for our CVPR'18 paper:
 > 2D/3D Pose Estimation and Action Recognition using Multitask Deep Learning
 
-# Attention! This is a WIP!
+
+
+## Warning! This is a WIP!
 
 During the next few days I will be uploading code and weights corresponding
 to the CVPR paper, which will be tagged appropriately. Meanwhile, I will still
 make changes in that code.
 
 <!--The software only supports data format 'channels_last'.-->
+
+## Evaluation on public datasets
+
+<!--In order to reproduce the results reported in the paper, please make sure-->
+<!--that you are using the correct version by doing `git checkout v1.0-cvpr18`.-->
+
+### 2D pose estimation on MPII
+
+This model reached 91.2% on the test set using multi-crop and horizontal
+flipping, and 89.1% on the validation set, single-crop. To reproduce results on
+validation, run:
+```
+  python3 exp/mpii/eval_mpii_singleperson.py output/eval-mpii
+```
+. The output will be stored in `output/eval-mpii/log.txt`.
+
 
 ## Citing
 
@@ -28,3 +46,4 @@ useful for you.
 ## License
 
 MIT License
+
