@@ -4,6 +4,7 @@ from .pose import get_valid_joints
 
 from .io import WARNING
 from .io import printcn
+from .io import warning
 
 relsize_std = 1.5
 square_std = True
@@ -153,4 +154,74 @@ def objposwin_to_bbox(objpos, winsize):
     y2 = objpos[1] + winsize[1]/2
 
     return np.array([x1, y1, x2, y2])
+
+
+logkey_warn = set()
+def get_gt_bbox(pose, visible, image_size, scale=1.0, logkey=None):
+    assert len(pose.shape) == 3 and pose.shape[-1] >= 2, \
+            'Invalid pose shape ({})'.format(pose.shape) \
+            + ', expected (num_frames, num_joints, dim) vector'
+    assert len(pose) == len(visible), \
+            'pose and visible should have the same langth'
+
+    if len(pose) == 1:
+        idx = [0]
+    else:
+        idx = [0, int(len(pose)/2 + 0.5), len(pose)-1]
+
+    clip_bbox = np.array([np.inf, np.inf, -np.inf, -np.inf])
+
+    for i in idx:
+        temp = pose[i, visible[i] >= 0.5]
+        if len(temp) == 0:
+            temp = pose[i, pose[i] > 0]
+
+        if len(temp) > 0:
+            b = get_valid_bbox(temp, relsize=1.5*scale)
+
+            clip_bbox[0] = min(b[0], clip_bbox[0])
+            clip_bbox[1] = min(b[1], clip_bbox[1])
+            clip_bbox[2] = max(b[2], clip_bbox[2])
+            clip_bbox[3] = max(b[3], clip_bbox[3])
+        else:
+            if logkey not in logkey_warn:
+                warning('No ground-truth bounding box, ' \
+                        'using full image (key {})!'.format(logkey))
+            logkey_warn.add(logkey)
+
+            clip_bbox[0] = min(0, clip_bbox[0])
+            clip_bbox[1] = min(0, clip_bbox[1])
+            clip_bbox[2] = max(image_size[0], clip_bbox[2])
+            clip_bbox[3] = max(image_size[1], clip_bbox[3])
+
+    return clip_bbox
+
+
+def get_crop_params(rootj, imgsize, f, scale):
+    assert len(rootj.shape) == 2 and rootj.shape[-1] == 3, 'Invalid rootj ' \
+            + 'shape ({}), expected (n, 3) vector'.format(rootj.shape)
+
+    if len(rootj) == 1:
+        idx = [0]
+    else:
+        idx = [0, int(len(rootj)/2 + 0.5), len(rootj)-1]
+
+    x1 = y1 = np.inf
+    x2 = y2 = -np.inf
+    zrange = np.array([np.inf, -np.inf])
+    for i in idx:
+        objpos = np.array([rootj[0, 0], rootj[0, 1] + scale])
+        d = rootj[0, 2]
+        winsize = (2.25*scale)*max(imgsize[0]*f[0, 0]/d, imgsize[1]*f[0, 1]/d)
+        bo = objposwin_to_bbox(objpos, (winsize, winsize))
+        x1 = min(x1, bo[0])
+        y1 = min(y1, bo[1])
+        x2 = max(x2, bo[2])
+        y2 = max(y2, bo[3])
+        zrange[0] = min(zrange[0], d - scale*1000.)
+        zrange[1] = max(zrange[1], d + scale*1000.)
+
+    objpos, winsize = bbox_to_objposwin([x1, y1, x2, y2])
+
+    return objpos, winsize, zrange
 
