@@ -6,21 +6,22 @@ K.set_image_data_format('channels_last')
 class DataConfig(object):
     """Input frame configuration and data augmentation setup."""
 
-    def __init__(self, crop_resolution=(256, 256), image_num_channels=(3,),
+    def __init__(self, crop_resolution=(256, 256), image_channels=(3,),
             angles=[0], fixed_angle=0,
             scales=[1], fixed_scale=1,
             trans_x=[0], fixed_trans_x=0,
             trans_y=[0], fixed_trans_y=0,
             hflips=[0, 1], fixed_hflip=0,
             chpower=0.01*np.array(range(90, 110+1, 2)), fixed_chpower=1,
+            geoocclusion=None, fixed_geoocclusion=None,
             subsampling=[1], fixed_subsampling=1):
 
         self.crop_resolution = crop_resolution
-        self.image_num_channels = image_num_channels
+        self.image_channels = image_channels
         if K.image_data_format() == 'channels_last':
-            self.input_shape = crop_resolution + image_num_channels
+            self.input_shape = crop_resolution + image_channels
         else:
-            self.input_shape = image_num_channels + crop_resolution
+            self.input_shape = image_channels + crop_resolution
         self.angles = angles
         self.fixed_angle = fixed_angle
         self.scales = scales
@@ -33,6 +34,8 @@ class DataConfig(object):
         self.fixed_hflip = fixed_hflip
         self.chpower = chpower
         self.fixed_chpower = fixed_chpower
+        self.geoocclusion = geoocclusion
+        self.fixed_geoocclusion = fixed_geoocclusion
         self.subsampling = subsampling
         self.fixed_subsampling = fixed_subsampling
 
@@ -43,6 +46,7 @@ class DataConfig(object):
                 'transy': self.fixed_trans_y,
                 'hflip': self.fixed_hflip,
                 'chpower': self.fixed_chpower,
+                'geoocclusion': self.fixed_geoocclusion,
                 'subspl': self.fixed_subsampling}
 
     def random_data_generator(self):
@@ -54,6 +58,7 @@ class DataConfig(object):
         chpower = (DataConfig._getrand(self.chpower),
                 DataConfig._getrand(self.chpower),
                 DataConfig._getrand(self.chpower))
+        geoocclusion = self.__get_random_geoocclusion()
         subsampling = DataConfig._getrand(self.subsampling)
 
         return {'angle': angle,
@@ -62,7 +67,27 @@ class DataConfig(object):
                 'transy': trans_y,
                 'hflip': hflip,
                 'chpower': chpower,
+                'geoocclusion': geoocclusion,
                 'subspl': subsampling}
+
+    def __get_random_geoocclusion(self):
+        if self.geoocclusion is not None:
+
+            w = int(DataConfig._getrand(self.geoocclusion) / 2)
+            h = int(DataConfig._getrand(self.geoocclusion) / 2)
+            xmin = w + 1
+            xmax = self.crop_resolution[0] - xmin
+            ymin = h + 1
+            ymax = self.crop_resolution[1] - ymin
+
+            x = DataConfig._getrand(range(xmin, xmax, 5))
+            y = DataConfig._getrand(range(ymin, ymax, 5))
+            bbox = (x-w, y-h, x+w, y+h)
+
+            return bbox
+
+        else:
+            return None
 
     @staticmethod
     def _getrand(x):
@@ -100,9 +125,7 @@ human36m_dataconf = DataConfig(
         crop_resolution=(256, 256),
         angles=np.array(range(-10, 10+1, 5)),
         scales=np.array([0.8, 1.0, 1.2]),
-        trans_x=np.array(range(-30, 31, 5)),
-        trans_y=np.array(range(-5, 6, 1)),
-        subsampling=[1, 2]
+        geoocclusion=np.array(range(20, 90)),
         )
 
 ntu_ar_dataconf = DataConfig(
@@ -124,3 +147,5 @@ ntu_pe_dataconf = DataConfig(
         subsampling=[1, 2, 4]
         )
 
+# Aliases.
+mpii_dataconf = mpii_sp_dataconf

@@ -1,0 +1,839 @@
+S1/Videos/Directions 1.54138969.mp4:a02_s01_e01_c01
+S1/Videos/Directions.54138969.mp4:a02_s01_e02_c01
+S1/Videos/Discussion 1.54138969.mp4:a03_s01_e01_c01
+S1/Videos/Discussion.54138969.mp4:a03_s01_e02_c01
+S1/Videos/Eating 2.54138969.mp4:a04_s01_e01_c01
+S1/Videos/Eating.54138969.mp4:a04_s01_e02_c01
+S1/Videos/Greeting 1.54138969.mp4:a05_s01_e01_c01
+S1/Videos/Greeting.54138969.mp4:a05_s01_e02_c01
+S1/Videos/Phoning 1.54138969.mp4:a06_s01_e01_c01
+S1/Videos/Phoning.54138969.mp4:a06_s01_e02_c01
+S1/Videos/Posing 1.54138969.mp4:a07_s01_e01_c01
+S1/Videos/Posing.54138969.mp4:a07_s01_e02_c01
+S1/Videos/Purchases 1.54138969.mp4:a08_s01_e01_c01
+S1/Videos/Purchases.54138969.mp4:a08_s01_e02_c01
+S1/Videos/Sitting 1.54138969.mp4:a09_s01_e01_c01
+S1/Videos/Sitting 2.54138969.mp4:a09_s01_e02_c01
+S1/Videos/SittingDown 2.54138969.mp4:a10_s01_e01_c01
+S1/Videos/SittingDown.54138969.mp4:a10_s01_e02_c01
+S1/Videos/Smoking 1.54138969.mp4:a11_s01_e01_c01
+S1/Videos/Smoking.54138969.mp4:a11_s01_e02_c01
+S1/Videos/TakingPhoto 1.54138969.mp4:a12_s01_e01_c01
+S1/Videos/TakingPhoto.54138969.mp4:a12_s01_e02_c01
+S1/Videos/Waiting 1.54138969.mp4:a13_s01_e01_c01
+S1/Videos/Waiting.54138969.mp4:a13_s01_e02_c01
+S1/Videos/Walking 1.54138969.mp4:a14_s01_e01_c01
+S1/Videos/Walking.54138969.mp4:a14_s01_e02_c01
+S1/Videos/WalkingDog 1.54138969.mp4:a15_s01_e01_c01
+S1/Videos/WalkingDog.54138969.mp4:a15_s01_e02_c01
+S1/Videos/WalkTogether 1.54138969.mp4:a16_s01_e01_c01
+S1/Videos/WalkTogether.54138969.mp4:a16_s01_e02_c01
+S5/Videos/Directions 1.54138969.mp4:a02_s05_e01_c01
+S5/Videos/Directions 2.54138969.mp4:a02_s05_e02_c01
+S5/Videos/Discussion 2.54138969.mp4:a03_s05_e01_c01
+S5/Videos/Discussion 3.54138969.mp4:a03_s05_e02_c01
+S5/Videos/Eating 1.54138969.mp4:a04_s05_e01_c01
+S5/Videos/Eating.54138969.mp4:a04_s05_e02_c01
+S5/Videos/Greeting 1.54138969.mp4:a05_s05_e01_c01
+S5/Videos/Greeting 2.54138969.mp4:a05_s05_e02_c01
+S5/Videos/Phoning 1.54138969.mp4:a06_s05_e01_c01
+S5/Videos/Phoning.54138969.mp4:a06_s05_e02_c01
+S5/Videos/Posing 1.54138969.mp4:a07_s05_e01_c01
+S5/Videos/Posing.54138969.mp4:a07_s05_e02_c01
+S5/Videos/Purchases 1.54138969.mp4:a08_s05_e01_c01
+S5/Videos/Purchases.54138969.mp4:a08_s05_e02_c01
+S5/Videos/Sitting 1.54138969.mp4:a09_s05_e01_c01
+S5/Videos/Sitting.54138969.mp4:a09_s05_e02_c01
+S5/Videos/SittingDown.54138969.mp4:a10_s05_e01_c01
+S5/Videos/SittingDown 1.54138969.mp4:a10_s05_e02_c01
+S5/Videos/Smoking 1.54138969.mp4:a11_s05_e01_c01
+S5/Videos/Smoking.54138969.mp4:a11_s05_e02_c01
+S5/Videos/Photo.54138969.mp4:a12_s05_e01_c01
+S5/Videos/Photo 2.54138969.mp4:a12_s05_e02_c01
+S5/Videos/Waiting 1.54138969.mp4:a13_s05_e01_c01
+S5/Videos/Waiting 2.54138969.mp4:a13_s05_e02_c01
+S5/Videos/Walking 1.54138969.mp4:a14_s05_e01_c01
+S5/Videos/Walking.54138969.mp4:a14_s05_e02_c01
+S5/Videos/WalkDog 1.54138969.mp4:a15_s05_e01_c01
+S5/Videos/WalkDog.54138969.mp4:a15_s05_e02_c01
+S5/Videos/WalkTogether 1.54138969.mp4:a16_s05_e01_c01
+S5/Videos/WalkTogether.54138969.mp4:a16_s05_e02_c01
+S6/Videos/Directions 1.54138969.mp4:a02_s06_e01_c01
+S6/Videos/Directions.54138969.mp4:a02_s06_e02_c01
+S6/Videos/Discussion 1.54138969.mp4:a03_s06_e01_c01
+S6/Videos/Discussion.54138969.mp4:a03_s06_e02_c01
+S6/Videos/Eating 1.54138969.mp4:a04_s06_e01_c01
+S6/Videos/Eating 2.54138969.mp4:a04_s06_e02_c01
+S6/Videos/Greeting 1.54138969.mp4:a05_s06_e01_c01
+S6/Videos/Greeting.54138969.mp4:a05_s06_e02_c01
+S6/Videos/Phoning 1.54138969.mp4:a06_s06_e01_c01
+S6/Videos/Phoning.54138969.mp4:a06_s06_e02_c01
+S6/Videos/Posing 2.54138969.mp4:a07_s06_e01_c01
+S6/Videos/Posing.54138969.mp4:a07_s06_e02_c01
+S6/Videos/Purchases 1.54138969.mp4:a08_s06_e01_c01
+S6/Videos/Purchases.54138969.mp4:a08_s06_e02_c01
+S6/Videos/Sitting 1.54138969.mp4:a09_s06_e01_c01
+S6/Videos/Sitting 2.54138969.mp4:a09_s06_e02_c01
+S6/Videos/SittingDown 1.54138969.mp4:a10_s06_e01_c01
+S6/Videos/SittingDown.54138969.mp4:a10_s06_e02_c01
+S6/Videos/Smoking 1.54138969.mp4:a11_s06_e01_c01
+S6/Videos/Smoking.54138969.mp4:a11_s06_e02_c01
+S6/Videos/Photo.54138969.mp4:a12_s06_e01_c01
+S6/Videos/Photo 1.54138969.mp4:a12_s06_e02_c01
+S6/Videos/Waiting 3.54138969.mp4:a13_s06_e01_c01
+S6/Videos/Waiting.54138969.mp4:a13_s06_e02_c01
+S6/Videos/Walking 1.54138969.mp4:a14_s06_e01_c01
+S6/Videos/Walking.54138969.mp4:a14_s06_e02_c01
+S6/Videos/WalkDog 1.54138969.mp4:a15_s06_e01_c01
+S6/Videos/WalkDog.54138969.mp4:a15_s06_e02_c01
+S6/Videos/WalkTogether 1.54138969.mp4:a16_s06_e01_c01
+S6/Videos/WalkTogether.54138969.mp4:a16_s06_e02_c01
+S7/Videos/Directions 1.54138969.mp4:a02_s07_e01_c01
+S7/Videos/Directions.54138969.mp4:a02_s07_e02_c01
+S7/Videos/Discussion 1.54138969.mp4:a03_s07_e01_c01
+S7/Videos/Discussion.54138969.mp4:a03_s07_e02_c01
+S7/Videos/Eating 1.54138969.mp4:a04_s07_e01_c01
+S7/Videos/Eating.54138969.mp4:a04_s07_e02_c01
+S7/Videos/Greeting 1.54138969.mp4:a05_s07_e01_c01
+S7/Videos/Greeting.54138969.mp4:a05_s07_e02_c01
+S7/Videos/Phoning 2.54138969.mp4:a06_s07_e01_c01
+S7/Videos/Phoning.54138969.mp4:a06_s07_e02_c01
+S7/Videos/Posing 1.54138969.mp4:a07_s07_e01_c01
+S7/Videos/Posing.54138969.mp4:a07_s07_e02_c01
+S7/Videos/Purchases 1.54138969.mp4:a08_s07_e01_c01
+S7/Videos/Purchases.54138969.mp4:a08_s07_e02_c01
+S7/Videos/Sitting 1.54138969.mp4:a09_s07_e01_c01
+S7/Videos/Sitting.54138969.mp4:a09_s07_e02_c01
+S7/Videos/SittingDown.54138969.mp4:a10_s07_e01_c01
+S7/Videos/SittingDown 1.54138969.mp4:a10_s07_e02_c01
+S7/Videos/Smoking 1.54138969.mp4:a11_s07_e01_c01
+S7/Videos/Smoking.54138969.mp4:a11_s07_e02_c01
+S7/Videos/Photo.54138969.mp4:a12_s07_e01_c01
+S7/Videos/Photo 1.54138969.mp4:a12_s07_e02_c01
+S7/Videos/Waiting 1.54138969.mp4:a13_s07_e01_c01
+S7/Videos/Waiting 2.54138969.mp4:a13_s07_e02_c01
+S7/Videos/Walking 1.54138969.mp4:a14_s07_e01_c01
+S7/Videos/Walking 2.54138969.mp4:a14_s07_e02_c01
+S7/Videos/WalkDog 1.54138969.mp4:a15_s07_e01_c01
+S7/Videos/WalkDog.54138969.mp4:a15_s07_e02_c01
+S7/Videos/WalkTogether 1.54138969.mp4:a16_s07_e01_c01
+S7/Videos/WalkTogether.54138969.mp4:a16_s07_e02_c01
+S8/Videos/Directions 1.54138969.mp4:a02_s08_e01_c01
+S8/Videos/Directions.54138969.mp4:a02_s08_e02_c01
+S8/Videos/Discussion 1.54138969.mp4:a03_s08_e01_c01
+S8/Videos/Discussion.54138969.mp4:a03_s08_e02_c01
+S8/Videos/Eating 1.54138969.mp4:a04_s08_e01_c01
+S8/Videos/Eating.54138969.mp4:a04_s08_e02_c01
+S8/Videos/Greeting 1.54138969.mp4:a05_s08_e01_c01
+S8/Videos/Greeting.54138969.mp4:a05_s08_e02_c01
+S8/Videos/Phoning 1.54138969.mp4:a06_s08_e01_c01
+S8/Videos/Phoning.54138969.mp4:a06_s08_e02_c01
+S8/Videos/Posing 1.54138969.mp4:a07_s08_e01_c01
+S8/Videos/Posing.54138969.mp4:a07_s08_e02_c01
+S8/Videos/Purchases 1.54138969.mp4:a08_s08_e01_c01
+S8/Videos/Purchases.54138969.mp4:a08_s08_e02_c01
+S8/Videos/Sitting 1.54138969.mp4:a09_s08_e01_c01
+S8/Videos/Sitting.54138969.mp4:a09_s08_e02_c01
+S8/Videos/SittingDown.54138969.mp4:a10_s08_e01_c01
+S8/Videos/SittingDown 1.54138969.mp4:a10_s08_e02_c01
+S8/Videos/Smoking 1.54138969.mp4:a11_s08_e01_c01
+S8/Videos/Smoking.54138969.mp4:a11_s08_e02_c01
+S8/Videos/Photo 1.54138969.mp4:a12_s08_e01_c01
+S8/Videos/Photo.54138969.mp4:a12_s08_e02_c01
+S8/Videos/Waiting 1.54138969.mp4:a13_s08_e01_c01
+S8/Videos/Waiting.54138969.mp4:a13_s08_e02_c01
+S8/Videos/Walking 1.54138969.mp4:a14_s08_e01_c01
+S8/Videos/Walking.54138969.mp4:a14_s08_e02_c01
+S8/Videos/WalkDog 1.54138969.mp4:a15_s08_e01_c01
+S8/Videos/WalkDog.54138969.mp4:a15_s08_e02_c01
+S8/Videos/WalkTogether 1.54138969.mp4:a16_s08_e01_c01
+S8/Videos/WalkTogether 2.54138969.mp4:a16_s08_e02_c01
+S9/Videos/Directions 1.54138969.mp4:a02_s09_e01_c01
+S9/Videos/Directions.54138969.mp4:a02_s09_e02_c01
+S9/Videos/Discussion 1.54138969.mp4:a03_s09_e01_c01
+S9/Videos/Discussion 2.54138969.mp4:a03_s09_e02_c01
+S9/Videos/Eating 1.54138969.mp4:a04_s09_e01_c01
+S9/Videos/Eating.54138969.mp4:a04_s09_e02_c01
+S9/Videos/Greeting 1.54138969.mp4:a05_s09_e01_c01
+S9/Videos/Greeting.54138969.mp4:a05_s09_e02_c01
+S9/Videos/Phoning 1.54138969.mp4:a06_s09_e01_c01
+S9/Videos/Phoning.54138969.mp4:a06_s09_e02_c01
+S9/Videos/Posing 1.54138969.mp4:a07_s09_e01_c01
+S9/Videos/Posing.54138969.mp4:a07_s09_e02_c01
+S9/Videos/Purchases 1.54138969.mp4:a08_s09_e01_c01
+S9/Videos/Purchases.54138969.mp4:a08_s09_e02_c01
+S9/Videos/Sitting 1.54138969.mp4:a09_s09_e01_c01
+S9/Videos/Sitting.54138969.mp4:a09_s09_e02_c01
+S9/Videos/SittingDown.54138969.mp4:a10_s09_e01_c01
+S9/Videos/SittingDown 1.54138969.mp4:a10_s09_e02_c01
+S9/Videos/Smoking 1.54138969.mp4:a11_s09_e01_c01
+S9/Videos/Smoking.54138969.mp4:a11_s09_e02_c01
+S9/Videos/Photo 1.54138969.mp4:a12_s09_e01_c01
+S9/Videos/Photo.54138969.mp4:a12_s09_e02_c01
+S9/Videos/Waiting 1.54138969.mp4:a13_s09_e01_c01
+S9/Videos/Waiting.54138969.mp4:a13_s09_e02_c01
+S9/Videos/Walking 1.54138969.mp4:a14_s09_e01_c01
+S9/Videos/Walking.54138969.mp4:a14_s09_e02_c01
+S9/Videos/WalkDog 1.54138969.mp4:a15_s09_e01_c01
+S9/Videos/WalkDog.54138969.mp4:a15_s09_e02_c01
+S9/Videos/WalkTogether 1.54138969.mp4:a16_s09_e01_c01
+S9/Videos/WalkTogether.54138969.mp4:a16_s09_e02_c01
+S11/Videos/Directions 1.54138969.mp4:a02_s11_e01_c01
+S11/Videos/Discussion 1.54138969.mp4:a03_s11_e01_c01
+S11/Videos/Discussion 2.54138969.mp4:a03_s11_e02_c01
+S11/Videos/Eating 1.54138969.mp4:a04_s11_e01_c01
+S11/Videos/Eating.54138969.mp4:a04_s11_e02_c01
+S11/Videos/Greeting 2.54138969.mp4:a05_s11_e01_c01
+S11/Videos/Greeting.54138969.mp4:a05_s11_e02_c01
+S11/Videos/Phoning 3.54138969.mp4:a06_s11_e01_c01
+S11/Videos/Phoning 2.54138969.mp4:a06_s11_e02_c01
+S11/Videos/Posing 1.54138969.mp4:a07_s11_e01_c01
+S11/Videos/Posing.54138969.mp4:a07_s11_e02_c01
+S11/Videos/Purchases 1.54138969.mp4:a08_s11_e01_c01
+S11/Videos/Purchases.54138969.mp4:a08_s11_e02_c01
+S11/Videos/Sitting 1.54138969.mp4:a09_s11_e01_c01
+S11/Videos/Sitting.54138969.mp4:a09_s11_e02_c01
+S11/Videos/SittingDown.54138969.mp4:a10_s11_e01_c01
+S11/Videos/SittingDown 1.54138969.mp4:a10_s11_e02_c01
+S11/Videos/Smoking 2.54138969.mp4:a11_s11_e01_c01
+S11/Videos/Smoking.54138969.mp4:a11_s11_e02_c01
+S11/Videos/Photo 1.54138969.mp4:a12_s11_e01_c01
+S11/Videos/Photo.54138969.mp4:a12_s11_e02_c01
+S11/Videos/Waiting 1.54138969.mp4:a13_s11_e01_c01
+S11/Videos/Waiting.54138969.mp4:a13_s11_e02_c01
+S11/Videos/Walking 1.54138969.mp4:a14_s11_e01_c01
+S11/Videos/Walking.54138969.mp4:a14_s11_e02_c01
+S11/Videos/WalkDog 1.54138969.mp4:a15_s11_e01_c01
+S11/Videos/WalkDog.54138969.mp4:a15_s11_e02_c01
+S11/Videos/WalkTogether 1.54138969.mp4:a16_s11_e01_c01
+S11/Videos/WalkTogether.54138969.mp4:a16_s11_e02_c01
+S1/Videos/Directions 1.55011271.mp4:a02_s01_e01_c02
+S1/Videos/Directions.55011271.mp4:a02_s01_e02_c02
+S1/Videos/Discussion 1.55011271.mp4:a03_s01_e01_c02
+S1/Videos/Discussion.55011271.mp4:a03_s01_e02_c02
+S1/Videos/Eating 2.55011271.mp4:a04_s01_e01_c02
+S1/Videos/Eating.55011271.mp4:a04_s01_e02_c02
+S1/Videos/Greeting 1.55011271.mp4:a05_s01_e01_c02
+S1/Videos/Greeting.55011271.mp4:a05_s01_e02_c02
+S1/Videos/Phoning 1.55011271.mp4:a06_s01_e01_c02
+S1/Videos/Phoning.55011271.mp4:a06_s01_e02_c02
+S1/Videos/Posing 1.55011271.mp4:a07_s01_e01_c02
+S1/Videos/Posing.55011271.mp4:a07_s01_e02_c02
+S1/Videos/Purchases 1.55011271.mp4:a08_s01_e01_c02
+S1/Videos/Purchases.55011271.mp4:a08_s01_e02_c02
+S1/Videos/Sitting 1.55011271.mp4:a09_s01_e01_c02
+S1/Videos/Sitting 2.55011271.mp4:a09_s01_e02_c02
+S1/Videos/SittingDown 2.55011271.mp4:a10_s01_e01_c02
+S1/Videos/SittingDown.55011271.mp4:a10_s01_e02_c02
+S1/Videos/Smoking 1.55011271.mp4:a11_s01_e01_c02
+S1/Videos/Smoking.55011271.mp4:a11_s01_e02_c02
+S1/Videos/TakingPhoto 1.55011271.mp4:a12_s01_e01_c02
+S1/Videos/TakingPhoto.55011271.mp4:a12_s01_e02_c02
+S1/Videos/Waiting 1.55011271.mp4:a13_s01_e01_c02
+S1/Videos/Waiting.55011271.mp4:a13_s01_e02_c02
+S1/Videos/Walking 1.55011271.mp4:a14_s01_e01_c02
+S1/Videos/Walking.55011271.mp4:a14_s01_e02_c02
+S1/Videos/WalkingDog 1.55011271.mp4:a15_s01_e01_c02
+S1/Videos/WalkingDog.55011271.mp4:a15_s01_e02_c02
+S1/Videos/WalkTogether 1.55011271.mp4:a16_s01_e01_c02
+S1/Videos/WalkTogether.55011271.mp4:a16_s01_e02_c02
+S5/Videos/Directions 1.55011271.mp4:a02_s05_e01_c02
+S5/Videos/Directions 2.55011271.mp4:a02_s05_e02_c02
+S5/Videos/Discussion 2.55011271.mp4:a03_s05_e01_c02
+S5/Videos/Discussion 3.55011271.mp4:a03_s05_e02_c02
+S5/Videos/Eating 1.55011271.mp4:a04_s05_e01_c02
+S5/Videos/Eating.55011271.mp4:a04_s05_e02_c02
+S5/Videos/Greeting 1.55011271.mp4:a05_s05_e01_c02
+S5/Videos/Greeting 2.55011271.mp4:a05_s05_e02_c02
+S5/Videos/Phoning 1.55011271.mp4:a06_s05_e01_c02
+S5/Videos/Phoning.55011271.mp4:a06_s05_e02_c02
+S5/Videos/Posing 1.55011271.mp4:a07_s05_e01_c02
+S5/Videos/Posing.55011271.mp4:a07_s05_e02_c02
+S5/Videos/Purchases 1.55011271.mp4:a08_s05_e01_c02
+S5/Videos/Purchases.55011271.mp4:a08_s05_e02_c02
+S5/Videos/Sitting 1.55011271.mp4:a09_s05_e01_c02
+S5/Videos/Sitting.55011271.mp4:a09_s05_e02_c02
+S5/Videos/SittingDown.55011271.mp4:a10_s05_e01_c02
+S5/Videos/SittingDown 1.55011271.mp4:a10_s05_e02_c02
+S5/Videos/Smoking 1.55011271.mp4:a11_s05_e01_c02
+S5/Videos/Smoking.55011271.mp4:a11_s05_e02_c02
+S5/Videos/Photo.55011271.mp4:a12_s05_e01_c02
+S5/Videos/Photo 2.55011271.mp4:a12_s05_e02_c02
+S5/Videos/Waiting 1.55011271.mp4:a13_s05_e01_c02
+S5/Videos/Waiting 2.55011271.mp4:a13_s05_e02_c02
+S5/Videos/Walking 1.55011271.mp4:a14_s05_e01_c02
+S5/Videos/Walking.55011271.mp4:a14_s05_e02_c02
+S5/Videos/WalkDog 1.55011271.mp4:a15_s05_e01_c02
+S5/Videos/WalkDog.55011271.mp4:a15_s05_e02_c02
+S5/Videos/WalkTogether 1.55011271.mp4:a16_s05_e01_c02
+S5/Videos/WalkTogether.55011271.mp4:a16_s05_e02_c02
+S6/Videos/Directions 1.55011271.mp4:a02_s06_e01_c02
+S6/Videos/Directions.55011271.mp4:a02_s06_e02_c02
+S6/Videos/Discussion 1.55011271.mp4:a03_s06_e01_c02
+S6/Videos/Discussion.55011271.mp4:a03_s06_e02_c02
+S6/Videos/Eating 1.55011271.mp4:a04_s06_e01_c02
+S6/Videos/Eating 2.55011271.mp4:a04_s06_e02_c02
+S6/Videos/Greeting 1.55011271.mp4:a05_s06_e01_c02
+S6/Videos/Greeting.55011271.mp4:a05_s06_e02_c02
+S6/Videos/Phoning 1.55011271.mp4:a06_s06_e01_c02
+S6/Videos/Phoning.55011271.mp4:a06_s06_e02_c02
+S6/Videos/Posing 2.55011271.mp4:a07_s06_e01_c02
+S6/Videos/Posing.55011271.mp4:a07_s06_e02_c02
+S6/Videos/Purchases 1.55011271.mp4:a08_s06_e01_c02
+S6/Videos/Purchases.55011271.mp4:a08_s06_e02_c02
+S6/Videos/Sitting 1.55011271.mp4:a09_s06_e01_c02
+S6/Videos/Sitting 2.55011271.mp4:a09_s06_e02_c02
+S6/Videos/SittingDown 1.55011271.mp4:a10_s06_e01_c02
+S6/Videos/SittingDown.55011271.mp4:a10_s06_e02_c02
+S6/Videos/Smoking 1.55011271.mp4:a11_s06_e01_c02
+S6/Videos/Smoking.55011271.mp4:a11_s06_e02_c02
+S6/Videos/Photo.55011271.mp4:a12_s06_e01_c02
+S6/Videos/Photo 1.55011271.mp4:a12_s06_e02_c02
+S6/Videos/Waiting 3.55011271.mp4:a13_s06_e01_c02
+S6/Videos/Waiting.55011271.mp4:a13_s06_e02_c02
+S6/Videos/Walking 1.55011271.mp4:a14_s06_e01_c02
+S6/Videos/Walking.55011271.mp4:a14_s06_e02_c02
+S6/Videos/WalkDog 1.55011271.mp4:a15_s06_e01_c02
+S6/Videos/WalkDog.55011271.mp4:a15_s06_e02_c02
+S6/Videos/WalkTogether 1.55011271.mp4:a16_s06_e01_c02
+S6/Videos/WalkTogether.55011271.mp4:a16_s06_e02_c02
+S7/Videos/Directions 1.55011271.mp4:a02_s07_e01_c02
+S7/Videos/Directions.55011271.mp4:a02_s07_e02_c02
+S7/Videos/Discussion 1.55011271.mp4:a03_s07_e01_c02
+S7/Videos/Discussion.55011271.mp4:a03_s07_e02_c02
+S7/Videos/Eating 1.55011271.mp4:a04_s07_e01_c02
+S7/Videos/Eating.55011271.mp4:a04_s07_e02_c02
+S7/Videos/Greeting 1.55011271.mp4:a05_s07_e01_c02
+S7/Videos/Greeting.55011271.mp4:a05_s07_e02_c02
+S7/Videos/Phoning 2.55011271.mp4:a06_s07_e01_c02
+S7/Videos/Phoning.55011271.mp4:a06_s07_e02_c02
+S7/Videos/Posing 1.55011271.mp4:a07_s07_e01_c02
+S7/Videos/Posing.55011271.mp4:a07_s07_e02_c02
+S7/Videos/Purchases 1.55011271.mp4:a08_s07_e01_c02
+S7/Videos/Purchases.55011271.mp4:a08_s07_e02_c02
+S7/Videos/Sitting 1.55011271.mp4:a09_s07_e01_c02
+S7/Videos/Sitting.55011271.mp4:a09_s07_e02_c02
+S7/Videos/SittingDown.55011271.mp4:a10_s07_e01_c02
+S7/Videos/SittingDown 1.55011271.mp4:a10_s07_e02_c02
+S7/Videos/Smoking 1.55011271.mp4:a11_s07_e01_c02
+S7/Videos/Smoking.55011271.mp4:a11_s07_e02_c02
+S7/Videos/Photo.55011271.mp4:a12_s07_e01_c02
+S7/Videos/Photo 1.55011271.mp4:a12_s07_e02_c02
+S7/Videos/Waiting 1.55011271.mp4:a13_s07_e01_c02
+S7/Videos/Waiting 2.55011271.mp4:a13_s07_e02_c02
+S7/Videos/Walking 1.55011271.mp4:a14_s07_e01_c02
+S7/Videos/Walking 2.55011271.mp4:a14_s07_e02_c02
+S7/Videos/WalkDog 1.55011271.mp4:a15_s07_e01_c02
+S7/Videos/WalkDog.55011271.mp4:a15_s07_e02_c02
+S7/Videos/WalkTogether 1.55011271.mp4:a16_s07_e01_c02
+S7/Videos/WalkTogether.55011271.mp4:a16_s07_e02_c02
+S8/Videos/Directions 1.55011271.mp4:a02_s08_e01_c02
+S8/Videos/Directions.55011271.mp4:a02_s08_e02_c02
+S8/Videos/Discussion 1.55011271.mp4:a03_s08_e01_c02
+S8/Videos/Discussion.55011271.mp4:a03_s08_e02_c02
+S8/Videos/Eating 1.55011271.mp4:a04_s08_e01_c02
+S8/Videos/Eating.55011271.mp4:a04_s08_e02_c02
+S8/Videos/Greeting 1.55011271.mp4:a05_s08_e01_c02
+S8/Videos/Greeting.55011271.mp4:a05_s08_e02_c02
+S8/Videos/Phoning 1.55011271.mp4:a06_s08_e01_c02
+S8/Videos/Phoning.55011271.mp4:a06_s08_e02_c02
+S8/Videos/Posing 1.55011271.mp4:a07_s08_e01_c02
+S8/Videos/Posing.55011271.mp4:a07_s08_e02_c02
+S8/Videos/Purchases 1.55011271.mp4:a08_s08_e01_c02
+S8/Videos/Purchases.55011271.mp4:a08_s08_e02_c02
+S8/Videos/Sitting 1.55011271.mp4:a09_s08_e01_c02
+S8/Videos/Sitting.55011271.mp4:a09_s08_e02_c02
+S8/Videos/SittingDown.55011271.mp4:a10_s08_e01_c02
+S8/Videos/SittingDown 1.55011271.mp4:a10_s08_e02_c02
+S8/Videos/Smoking 1.55011271.mp4:a11_s08_e01_c02
+S8/Videos/Smoking.55011271.mp4:a11_s08_e02_c02
+S8/Videos/Photo 1.55011271.mp4:a12_s08_e01_c02
+S8/Videos/Photo.55011271.mp4:a12_s08_e02_c02
+S8/Videos/Waiting 1.55011271.mp4:a13_s08_e01_c02
+S8/Videos/Waiting.55011271.mp4:a13_s08_e02_c02
+S8/Videos/Walking 1.55011271.mp4:a14_s08_e01_c02
+S8/Videos/Walking.55011271.mp4:a14_s08_e02_c02
+S8/Videos/WalkDog 1.55011271.mp4:a15_s08_e01_c02
+S8/Videos/WalkDog.55011271.mp4:a15_s08_e02_c02
+S8/Videos/WalkTogether 1.55011271.mp4:a16_s08_e01_c02
+S8/Videos/WalkTogether 2.55011271.mp4:a16_s08_e02_c02
+S9/Videos/Directions 1.55011271.mp4:a02_s09_e01_c02
+S9/Videos/Directions.55011271.mp4:a02_s09_e02_c02
+S9/Videos/Discussion 1.55011271.mp4:a03_s09_e01_c02
+S9/Videos/Discussion 2.55011271.mp4:a03_s09_e02_c02
+S9/Videos/Eating 1.55011271.mp4:a04_s09_e01_c02
+S9/Videos/Eating.55011271.mp4:a04_s09_e02_c02
+S9/Videos/Greeting 1.55011271.mp4:a05_s09_e01_c02
+S9/Videos/Greeting.55011271.mp4:a05_s09_e02_c02
+S9/Videos/Phoning 1.55011271.mp4:a06_s09_e01_c02
+S9/Videos/Phoning.55011271.mp4:a06_s09_e02_c02
+S9/Videos/Posing 1.55011271.mp4:a07_s09_e01_c02
+S9/Videos/Posing.55011271.mp4:a07_s09_e02_c02
+S9/Videos/Purchases 1.55011271.mp4:a08_s09_e01_c02
+S9/Videos/Purchases.55011271.mp4:a08_s09_e02_c02
+S9/Videos/Sitting 1.55011271.mp4:a09_s09_e01_c02
+S9/Videos/Sitting.55011271.mp4:a09_s09_e02_c02
+S9/Videos/SittingDown.55011271.mp4:a10_s09_e01_c02
+S9/Videos/SittingDown 1.55011271.mp4:a10_s09_e02_c02
+S9/Videos/Smoking 1.55011271.mp4:a11_s09_e01_c02
+S9/Videos/Smoking.55011271.mp4:a11_s09_e02_c02
+S9/Videos/Photo 1.55011271.mp4:a12_s09_e01_c02
+S9/Videos/Photo.55011271.mp4:a12_s09_e02_c02
+S9/Videos/Waiting 1.55011271.mp4:a13_s09_e01_c02
+S9/Videos/Waiting.55011271.mp4:a13_s09_e02_c02
+S9/Videos/Walking 1.55011271.mp4:a14_s09_e01_c02
+S9/Videos/Walking.55011271.mp4:a14_s09_e02_c02
+S9/Videos/WalkDog 1.55011271.mp4:a15_s09_e01_c02
+S9/Videos/WalkDog.55011271.mp4:a15_s09_e02_c02
+S9/Videos/WalkTogether 1.55011271.mp4:a16_s09_e01_c02
+S9/Videos/WalkTogether.55011271.mp4:a16_s09_e02_c02
+S11/Videos/Directions 1.55011271.mp4:a02_s11_e01_c02
+S11/Videos/Directions.55011271.mp4:a02_s11_e02_c02
+S11/Videos/Discussion 1.55011271.mp4:a03_s11_e01_c02
+S11/Videos/Discussion 2.55011271.mp4:a03_s11_e02_c02
+S11/Videos/Eating 1.55011271.mp4:a04_s11_e01_c02
+S11/Videos/Eating.55011271.mp4:a04_s11_e02_c02
+S11/Videos/Greeting 2.55011271.mp4:a05_s11_e01_c02
+S11/Videos/Greeting.55011271.mp4:a05_s11_e02_c02
+S11/Videos/Phoning 3.55011271.mp4:a06_s11_e01_c02
+S11/Videos/Phoning 2.55011271.mp4:a06_s11_e02_c02
+S11/Videos/Posing 1.55011271.mp4:a07_s11_e01_c02
+S11/Videos/Posing.55011271.mp4:a07_s11_e02_c02
+S11/Videos/Purchases 1.55011271.mp4:a08_s11_e01_c02
+S11/Videos/Purchases.55011271.mp4:a08_s11_e02_c02
+S11/Videos/Sitting 1.55011271.mp4:a09_s11_e01_c02
+S11/Videos/Sitting.55011271.mp4:a09_s11_e02_c02
+S11/Videos/SittingDown.55011271.mp4:a10_s11_e01_c02
+S11/Videos/SittingDown 1.55011271.mp4:a10_s11_e02_c02
+S11/Videos/Smoking 2.55011271.mp4:a11_s11_e01_c02
+S11/Videos/Smoking.55011271.mp4:a11_s11_e02_c02
+S11/Videos/Photo 1.55011271.mp4:a12_s11_e01_c02
+S11/Videos/Photo.55011271.mp4:a12_s11_e02_c02
+S11/Videos/Waiting 1.55011271.mp4:a13_s11_e01_c02
+S11/Videos/Waiting.55011271.mp4:a13_s11_e02_c02
+S11/Videos/Walking 1.55011271.mp4:a14_s11_e01_c02
+S11/Videos/Walking.55011271.mp4:a14_s11_e02_c02
+S11/Videos/WalkDog 1.55011271.mp4:a15_s11_e01_c02
+S11/Videos/WalkDog.55011271.mp4:a15_s11_e02_c02
+S11/Videos/WalkTogether 1.55011271.mp4:a16_s11_e01_c02
+S11/Videos/WalkTogether.55011271.mp4:a16_s11_e02_c02
+S1/Videos/Directions 1.58860488.mp4:a02_s01_e01_c03
+S1/Videos/Directions.58860488.mp4:a02_s01_e02_c03
+S1/Videos/Discussion 1.58860488.mp4:a03_s01_e01_c03
+S1/Videos/Discussion.58860488.mp4:a03_s01_e02_c03
+S1/Videos/Eating 2.58860488.mp4:a04_s01_e01_c03
+S1/Videos/Eating.58860488.mp4:a04_s01_e02_c03
+S1/Videos/Greeting 1.58860488.mp4:a05_s01_e01_c03
+S1/Videos/Greeting.58860488.mp4:a05_s01_e02_c03
+S1/Videos/Phoning 1.58860488.mp4:a06_s01_e01_c03
+S1/Videos/Phoning.58860488.mp4:a06_s01_e02_c03
+S1/Videos/Posing 1.58860488.mp4:a07_s01_e01_c03
+S1/Videos/Posing.58860488.mp4:a07_s01_e02_c03
+S1/Videos/Purchases 1.58860488.mp4:a08_s01_e01_c03
+S1/Videos/Purchases.58860488.mp4:a08_s01_e02_c03
+S1/Videos/Sitting 1.58860488.mp4:a09_s01_e01_c03
+S1/Videos/Sitting 2.58860488.mp4:a09_s01_e02_c03
+S1/Videos/SittingDown 2.58860488.mp4:a10_s01_e01_c03
+S1/Videos/SittingDown.58860488.mp4:a10_s01_e02_c03
+S1/Videos/Smoking 1.58860488.mp4:a11_s01_e01_c03
+S1/Videos/Smoking.58860488.mp4:a11_s01_e02_c03
+S1/Videos/TakingPhoto 1.58860488.mp4:a12_s01_e01_c03
+S1/Videos/TakingPhoto.58860488.mp4:a12_s01_e02_c03
+S1/Videos/Waiting 1.58860488.mp4:a13_s01_e01_c03
+S1/Videos/Waiting.58860488.mp4:a13_s01_e02_c03
+S1/Videos/Walking 1.58860488.mp4:a14_s01_e01_c03
+S1/Videos/Walking.58860488.mp4:a14_s01_e02_c03
+S1/Videos/WalkingDog 1.58860488.mp4:a15_s01_e01_c03
+S1/Videos/WalkingDog.58860488.mp4:a15_s01_e02_c03
+S1/Videos/WalkTogether 1.58860488.mp4:a16_s01_e01_c03
+S1/Videos/WalkTogether.58860488.mp4:a16_s01_e02_c03
+S5/Videos/Directions 1.58860488.mp4:a02_s05_e01_c03
+S5/Videos/Directions 2.58860488.mp4:a02_s05_e02_c03
+S5/Videos/Discussion 2.58860488.mp4:a03_s05_e01_c03
+S5/Videos/Discussion 3.58860488.mp4:a03_s05_e02_c03
+S5/Videos/Eating 1.58860488.mp4:a04_s05_e01_c03
+S5/Videos/Eating.58860488.mp4:a04_s05_e02_c03
+S5/Videos/Greeting 1.58860488.mp4:a05_s05_e01_c03
+S5/Videos/Greeting 2.58860488.mp4:a05_s05_e02_c03
+S5/Videos/Phoning 1.58860488.mp4:a06_s05_e01_c03
+S5/Videos/Phoning.58860488.mp4:a06_s05_e02_c03
+S5/Videos/Posing 1.58860488.mp4:a07_s05_e01_c03
+S5/Videos/Posing.58860488.mp4:a07_s05_e02_c03
+S5/Videos/Purchases 1.58860488.mp4:a08_s05_e01_c03
+S5/Videos/Purchases.58860488.mp4:a08_s05_e02_c03
+S5/Videos/Sitting 1.58860488.mp4:a09_s05_e01_c03
+S5/Videos/Sitting.58860488.mp4:a09_s05_e02_c03
+S5/Videos/SittingDown.58860488.mp4:a10_s05_e01_c03
+S5/Videos/SittingDown 1.58860488.mp4:a10_s05_e02_c03
+S5/Videos/Smoking 1.58860488.mp4:a11_s05_e01_c03
+S5/Videos/Smoking.58860488.mp4:a11_s05_e02_c03
+S5/Videos/Photo.58860488.mp4:a12_s05_e01_c03
+S5/Videos/Photo 2.58860488.mp4:a12_s05_e02_c03
+S5/Videos/Waiting 1.58860488.mp4:a13_s05_e01_c03
+S5/Videos/Waiting 2.58860488.mp4:a13_s05_e02_c03
+S5/Videos/Walking 1.58860488.mp4:a14_s05_e01_c03
+S5/Videos/Walking.58860488.mp4:a14_s05_e02_c03
+S5/Videos/WalkDog 1.58860488.mp4:a15_s05_e01_c03
+S5/Videos/WalkDog.58860488.mp4:a15_s05_e02_c03
+S5/Videos/WalkTogether 1.58860488.mp4:a16_s05_e01_c03
+S5/Videos/WalkTogether.58860488.mp4:a16_s05_e02_c03
+S6/Videos/Directions 1.58860488.mp4:a02_s06_e01_c03
+S6/Videos/Directions.58860488.mp4:a02_s06_e02_c03
+S6/Videos/Discussion 1.58860488.mp4:a03_s06_e01_c03
+S6/Videos/Discussion.58860488.mp4:a03_s06_e02_c03
+S6/Videos/Eating 1.58860488.mp4:a04_s06_e01_c03
+S6/Videos/Eating 2.58860488.mp4:a04_s06_e02_c03
+S6/Videos/Greeting 1.58860488.mp4:a05_s06_e01_c03
+S6/Videos/Greeting.58860488.mp4:a05_s06_e02_c03
+S6/Videos/Phoning 1.58860488.mp4:a06_s06_e01_c03
+S6/Videos/Phoning.58860488.mp4:a06_s06_e02_c03
+S6/Videos/Posing 2.58860488.mp4:a07_s06_e01_c03
+S6/Videos/Posing.58860488.mp4:a07_s06_e02_c03
+S6/Videos/Purchases 1.58860488.mp4:a08_s06_e01_c03
+S6/Videos/Purchases.58860488.mp4:a08_s06_e02_c03
+S6/Videos/Sitting 1.58860488.mp4:a09_s06_e01_c03
+S6/Videos/Sitting 2.58860488.mp4:a09_s06_e02_c03
+S6/Videos/SittingDown 1.58860488.mp4:a10_s06_e01_c03
+S6/Videos/SittingDown.58860488.mp4:a10_s06_e02_c03
+S6/Videos/Smoking 1.58860488.mp4:a11_s06_e01_c03
+S6/Videos/Smoking.58860488.mp4:a11_s06_e02_c03
+S6/Videos/Photo.58860488.mp4:a12_s06_e01_c03
+S6/Videos/Photo 1.58860488.mp4:a12_s06_e02_c03
+S6/Videos/Waiting 3.58860488.mp4:a13_s06_e01_c03
+S6/Videos/Waiting.58860488.mp4:a13_s06_e02_c03
+S6/Videos/Walking 1.58860488.mp4:a14_s06_e01_c03
+S6/Videos/Walking.58860488.mp4:a14_s06_e02_c03
+S6/Videos/WalkDog 1.58860488.mp4:a15_s06_e01_c03
+S6/Videos/WalkDog.58860488.mp4:a15_s06_e02_c03
+S6/Videos/WalkTogether 1.58860488.mp4:a16_s06_e01_c03
+S6/Videos/WalkTogether.58860488.mp4:a16_s06_e02_c03
+S7/Videos/Directions 1.58860488.mp4:a02_s07_e01_c03
+S7/Videos/Directions.58860488.mp4:a02_s07_e02_c03
+S7/Videos/Discussion 1.58860488.mp4:a03_s07_e01_c03
+S7/Videos/Discussion.58860488.mp4:a03_s07_e02_c03
+S7/Videos/Eating 1.58860488.mp4:a04_s07_e01_c03
+S7/Videos/Eating.58860488.mp4:a04_s07_e02_c03
+S7/Videos/Greeting 1.58860488.mp4:a05_s07_e01_c03
+S7/Videos/Greeting.58860488.mp4:a05_s07_e02_c03
+S7/Videos/Phoning 2.58860488.mp4:a06_s07_e01_c03
+S7/Videos/Phoning.58860488.mp4:a06_s07_e02_c03
+S7/Videos/Posing 1.58860488.mp4:a07_s07_e01_c03
+S7/Videos/Posing.58860488.mp4:a07_s07_e02_c03
+S7/Videos/Purchases 1.58860488.mp4:a08_s07_e01_c03
+S7/Videos/Purchases.58860488.mp4:a08_s07_e02_c03
+S7/Videos/Sitting 1.58860488.mp4:a09_s07_e01_c03
+S7/Videos/Sitting.58860488.mp4:a09_s07_e02_c03
+S7/Videos/SittingDown.58860488.mp4:a10_s07_e01_c03
+S7/Videos/SittingDown 1.58860488.mp4:a10_s07_e02_c03
+S7/Videos/Smoking 1.58860488.mp4:a11_s07_e01_c03
+S7/Videos/Smoking.58860488.mp4:a11_s07_e02_c03
+S7/Videos/Photo.58860488.mp4:a12_s07_e01_c03
+S7/Videos/Photo 1.58860488.mp4:a12_s07_e02_c03
+S7/Videos/Waiting 1.58860488.mp4:a13_s07_e01_c03
+S7/Videos/Waiting 2.58860488.mp4:a13_s07_e02_c03
+S7/Videos/Walking 1.58860488.mp4:a14_s07_e01_c03
+S7/Videos/Walking 2.58860488.mp4:a14_s07_e02_c03
+S7/Videos/WalkDog 1.58860488.mp4:a15_s07_e01_c03
+S7/Videos/WalkDog.58860488.mp4:a15_s07_e02_c03
+S7/Videos/WalkTogether 1.58860488.mp4:a16_s07_e01_c03
+S7/Videos/WalkTogether.58860488.mp4:a16_s07_e02_c03
+S8/Videos/Directions 1.58860488.mp4:a02_s08_e01_c03
+S8/Videos/Directions.58860488.mp4:a02_s08_e02_c03
+S8/Videos/Discussion 1.58860488.mp4:a03_s08_e01_c03
+S8/Videos/Discussion.58860488.mp4:a03_s08_e02_c03
+S8/Videos/Eating 1.58860488.mp4:a04_s08_e01_c03
+S8/Videos/Eating.58860488.mp4:a04_s08_e02_c03
+S8/Videos/Greeting 1.58860488.mp4:a05_s08_e01_c03
+S8/Videos/Greeting.58860488.mp4:a05_s08_e02_c03
+S8/Videos/Phoning 1.58860488.mp4:a06_s08_e01_c03
+S8/Videos/Phoning.58860488.mp4:a06_s08_e02_c03
+S8/Videos/Posing 1.58860488.mp4:a07_s08_e01_c03
+S8/Videos/Posing.58860488.mp4:a07_s08_e02_c03
+S8/Videos/Purchases 1.58860488.mp4:a08_s08_e01_c03
+S8/Videos/Purchases.58860488.mp4:a08_s08_e02_c03
+S8/Videos/Sitting 1.58860488.mp4:a09_s08_e01_c03
+S8/Videos/Sitting.58860488.mp4:a09_s08_e02_c03
+S8/Videos/SittingDown.58860488.mp4:a10_s08_e01_c03
+S8/Videos/SittingDown 1.58860488.mp4:a10_s08_e02_c03
+S8/Videos/Smoking 1.58860488.mp4:a11_s08_e01_c03
+S8/Videos/Smoking.58860488.mp4:a11_s08_e02_c03
+S8/Videos/Photo 1.58860488.mp4:a12_s08_e01_c03
+S8/Videos/Photo.58860488.mp4:a12_s08_e02_c03
+S8/Videos/Waiting 1.58860488.mp4:a13_s08_e01_c03
+S8/Videos/Waiting.58860488.mp4:a13_s08_e02_c03
+S8/Videos/Walking 1.58860488.mp4:a14_s08_e01_c03
+S8/Videos/Walking.58860488.mp4:a14_s08_e02_c03
+S8/Videos/WalkDog 1.58860488.mp4:a15_s08_e01_c03
+S8/Videos/WalkDog.58860488.mp4:a15_s08_e02_c03
+S8/Videos/WalkTogether 1.58860488.mp4:a16_s08_e01_c03
+S8/Videos/WalkTogether 2.58860488.mp4:a16_s08_e02_c03
+S9/Videos/Directions 1.58860488.mp4:a02_s09_e01_c03
+S9/Videos/Directions.58860488.mp4:a02_s09_e02_c03
+S9/Videos/Discussion 1.58860488.mp4:a03_s09_e01_c03
+S9/Videos/Discussion 2.58860488.mp4:a03_s09_e02_c03
+S9/Videos/Eating 1.58860488.mp4:a04_s09_e01_c03
+S9/Videos/Eating.58860488.mp4:a04_s09_e02_c03
+S9/Videos/Greeting 1.58860488.mp4:a05_s09_e01_c03
+S9/Videos/Greeting.58860488.mp4:a05_s09_e02_c03
+S9/Videos/Phoning 1.58860488.mp4:a06_s09_e01_c03
+S9/Videos/Phoning.58860488.mp4:a06_s09_e02_c03
+S9/Videos/Posing 1.58860488.mp4:a07_s09_e01_c03
+S9/Videos/Posing.58860488.mp4:a07_s09_e02_c03
+S9/Videos/Purchases 1.58860488.mp4:a08_s09_e01_c03
+S9/Videos/Purchases.58860488.mp4:a08_s09_e02_c03
+S9/Videos/Sitting 1.58860488.mp4:a09_s09_e01_c03
+S9/Videos/Sitting.58860488.mp4:a09_s09_e02_c03
+S9/Videos/SittingDown.58860488.mp4:a10_s09_e01_c03
+S9/Videos/SittingDown 1.58860488.mp4:a10_s09_e02_c03
+S9/Videos/Smoking 1.58860488.mp4:a11_s09_e01_c03
+S9/Videos/Smoking.58860488.mp4:a11_s09_e02_c03
+S9/Videos/Photo 1.58860488.mp4:a12_s09_e01_c03
+S9/Videos/Photo.58860488.mp4:a12_s09_e02_c03
+S9/Videos/Waiting 1.58860488.mp4:a13_s09_e01_c03
+S9/Videos/Waiting.58860488.mp4:a13_s09_e02_c03
+S9/Videos/Walking 1.58860488.mp4:a14_s09_e01_c03
+S9/Videos/Walking.58860488.mp4:a14_s09_e02_c03
+S9/Videos/WalkDog 1.58860488.mp4:a15_s09_e01_c03
+S9/Videos/WalkDog.58860488.mp4:a15_s09_e02_c03
+S9/Videos/WalkTogether 1.58860488.mp4:a16_s09_e01_c03
+S9/Videos/WalkTogether.58860488.mp4:a16_s09_e02_c03
+S11/Videos/Directions 1.58860488.mp4:a02_s11_e01_c03
+S11/Videos/Directions.58860488.mp4:a02_s11_e02_c03
+S11/Videos/Discussion 1.58860488.mp4:a03_s11_e01_c03
+S11/Videos/Discussion 2.58860488.mp4:a03_s11_e02_c03
+S11/Videos/Eating 1.58860488.mp4:a04_s11_e01_c03
+S11/Videos/Eating.58860488.mp4:a04_s11_e02_c03
+S11/Videos/Greeting 2.58860488.mp4:a05_s11_e01_c03
+S11/Videos/Greeting.58860488.mp4:a05_s11_e02_c03
+S11/Videos/Phoning 3.58860488.mp4:a06_s11_e01_c03
+S11/Videos/Phoning 2.58860488.mp4:a06_s11_e02_c03
+S11/Videos/Posing 1.58860488.mp4:a07_s11_e01_c03
+S11/Videos/Posing.58860488.mp4:a07_s11_e02_c03
+S11/Videos/Purchases 1.58860488.mp4:a08_s11_e01_c03
+S11/Videos/Purchases.58860488.mp4:a08_s11_e02_c03
+S11/Videos/Sitting 1.58860488.mp4:a09_s11_e01_c03
+S11/Videos/Sitting.58860488.mp4:a09_s11_e02_c03
+S11/Videos/SittingDown.58860488.mp4:a10_s11_e01_c03
+S11/Videos/SittingDown 1.58860488.mp4:a10_s11_e02_c03
+S11/Videos/Smoking 2.58860488.mp4:a11_s11_e01_c03
+S11/Videos/Smoking.58860488.mp4:a11_s11_e02_c03
+S11/Videos/Photo 1.58860488.mp4:a12_s11_e01_c03
+S11/Videos/Photo.58860488.mp4:a12_s11_e02_c03
+S11/Videos/Waiting 1.58860488.mp4:a13_s11_e01_c03
+S11/Videos/Waiting.58860488.mp4:a13_s11_e02_c03
+S11/Videos/Walking 1.58860488.mp4:a14_s11_e01_c03
+S11/Videos/Walking.58860488.mp4:a14_s11_e02_c03
+S11/Videos/WalkDog 1.58860488.mp4:a15_s11_e01_c03
+S11/Videos/WalkDog.58860488.mp4:a15_s11_e02_c03
+S11/Videos/WalkTogether 1.58860488.mp4:a16_s11_e01_c03
+S11/Videos/WalkTogether.58860488.mp4:a16_s11_e02_c03
+S1/Videos/Directions 1.60457274.mp4:a02_s01_e01_c04
+S1/Videos/Directions.60457274.mp4:a02_s01_e02_c04
+S1/Videos/Discussion 1.60457274.mp4:a03_s01_e01_c04
+S1/Videos/Discussion.60457274.mp4:a03_s01_e02_c04
+S1/Videos/Eating 2.60457274.mp4:a04_s01_e01_c04
+S1/Videos/Eating.60457274.mp4:a04_s01_e02_c04
+S1/Videos/Greeting 1.60457274.mp4:a05_s01_e01_c04
+S1/Videos/Greeting.60457274.mp4:a05_s01_e02_c04
+S1/Videos/Phoning 1.60457274.mp4:a06_s01_e01_c04
+S1/Videos/Phoning.60457274.mp4:a06_s01_e02_c04
+S1/Videos/Posing 1.60457274.mp4:a07_s01_e01_c04
+S1/Videos/Posing.60457274.mp4:a07_s01_e02_c04
+S1/Videos/Purchases 1.60457274.mp4:a08_s01_e01_c04
+S1/Videos/Purchases.60457274.mp4:a08_s01_e02_c04
+S1/Videos/Sitting 1.60457274.mp4:a09_s01_e01_c04
+S1/Videos/Sitting 2.60457274.mp4:a09_s01_e02_c04
+S1/Videos/SittingDown 2.60457274.mp4:a10_s01_e01_c04
+S1/Videos/SittingDown.60457274.mp4:a10_s01_e02_c04
+S1/Videos/Smoking 1.60457274.mp4:a11_s01_e01_c04
+S1/Videos/Smoking.60457274.mp4:a11_s01_e02_c04
+S1/Videos/TakingPhoto 1.60457274.mp4:a12_s01_e01_c04
+S1/Videos/TakingPhoto.60457274.mp4:a12_s01_e02_c04
+S1/Videos/Waiting 1.60457274.mp4:a13_s01_e01_c04
+S1/Videos/Waiting.60457274.mp4:a13_s01_e02_c04
+S1/Videos/Walking 1.60457274.mp4:a14_s01_e01_c04
+S1/Videos/Walking.60457274.mp4:a14_s01_e02_c04
+S1/Videos/WalkingDog 1.60457274.mp4:a15_s01_e01_c04
+S1/Videos/WalkingDog.60457274.mp4:a15_s01_e02_c04
+S1/Videos/WalkTogether 1.60457274.mp4:a16_s01_e01_c04
+S1/Videos/WalkTogether.60457274.mp4:a16_s01_e02_c04
+S5/Videos/Directions 1.60457274.mp4:a02_s05_e01_c04
+S5/Videos/Directions 2.60457274.mp4:a02_s05_e02_c04
+S5/Videos/Discussion 2.60457274.mp4:a03_s05_e01_c04
+S5/Videos/Discussion 3.60457274.mp4:a03_s05_e02_c04
+S5/Videos/Eating 1.60457274.mp4:a04_s05_e01_c04
+S5/Videos/Eating.60457274.mp4:a04_s05_e02_c04
+S5/Videos/Greeting 1.60457274.mp4:a05_s05_e01_c04
+S5/Videos/Greeting 2.60457274.mp4:a05_s05_e02_c04
+S5/Videos/Phoning 1.60457274.mp4:a06_s05_e01_c04
+S5/Videos/Phoning.60457274.mp4:a06_s05_e02_c04
+S5/Videos/Posing 1.60457274.mp4:a07_s05_e01_c04
+S5/Videos/Posing.60457274.mp4:a07_s05_e02_c04
+S5/Videos/Purchases 1.60457274.mp4:a08_s05_e01_c04
+S5/Videos/Purchases.60457274.mp4:a08_s05_e02_c04
+S5/Videos/Sitting 1.60457274.mp4:a09_s05_e01_c04
+S5/Videos/Sitting.60457274.mp4:a09_s05_e02_c04
+S5/Videos/SittingDown.60457274.mp4:a10_s05_e01_c04
+S5/Videos/SittingDown 1.60457274.mp4:a10_s05_e02_c04
+S5/Videos/Smoking 1.60457274.mp4:a11_s05_e01_c04
+S5/Videos/Smoking.60457274.mp4:a11_s05_e02_c04
+S5/Videos/Photo.60457274.mp4:a12_s05_e01_c04
+S5/Videos/Photo 2.60457274.mp4:a12_s05_e02_c04
+S5/Videos/Waiting 1.60457274.mp4:a13_s05_e01_c04
+S5/Videos/Waiting 2.60457274.mp4:a13_s05_e02_c04
+S5/Videos/Walking 1.60457274.mp4:a14_s05_e01_c04
+S5/Videos/Walking.60457274.mp4:a14_s05_e02_c04
+S5/Videos/WalkDog 1.60457274.mp4:a15_s05_e01_c04
+S5/Videos/WalkDog.60457274.mp4:a15_s05_e02_c04
+S5/Videos/WalkTogether 1.60457274.mp4:a16_s05_e01_c04
+S5/Videos/WalkTogether.60457274.mp4:a16_s05_e02_c04
+S6/Videos/Directions 1.60457274.mp4:a02_s06_e01_c04
+S6/Videos/Directions.60457274.mp4:a02_s06_e02_c04
+S6/Videos/Discussion 1.60457274.mp4:a03_s06_e01_c04
+S6/Videos/Discussion.60457274.mp4:a03_s06_e02_c04
+S6/Videos/Eating 1.60457274.mp4:a04_s06_e01_c04
+S6/Videos/Eating 2.60457274.mp4:a04_s06_e02_c04
+S6/Videos/Greeting 1.60457274.mp4:a05_s06_e01_c04
+S6/Videos/Greeting.60457274.mp4:a05_s06_e02_c04
+S6/Videos/Phoning 1.60457274.mp4:a06_s06_e01_c04
+S6/Videos/Phoning.60457274.mp4:a06_s06_e02_c04
+S6/Videos/Posing 2.60457274.mp4:a07_s06_e01_c04
+S6/Videos/Posing.60457274.mp4:a07_s06_e02_c04
+S6/Videos/Purchases 1.60457274.mp4:a08_s06_e01_c04
+S6/Videos/Purchases.60457274.mp4:a08_s06_e02_c04
+S6/Videos/Sitting 1.60457274.mp4:a09_s06_e01_c04
+S6/Videos/Sitting 2.60457274.mp4:a09_s06_e02_c04
+S6/Videos/SittingDown 1.60457274.mp4:a10_s06_e01_c04
+S6/Videos/SittingDown.60457274.mp4:a10_s06_e02_c04
+S6/Videos/Smoking 1.60457274.mp4:a11_s06_e01_c04
+S6/Videos/Smoking.60457274.mp4:a11_s06_e02_c04
+S6/Videos/Photo.60457274.mp4:a12_s06_e01_c04
+S6/Videos/Photo 1.60457274.mp4:a12_s06_e02_c04
+S6/Videos/Waiting 3.60457274.mp4:a13_s06_e01_c04
+S6/Videos/Waiting.60457274.mp4:a13_s06_e02_c04
+S6/Videos/Walking 1.60457274.mp4:a14_s06_e01_c04
+S6/Videos/Walking.60457274.mp4:a14_s06_e02_c04
+S6/Videos/WalkDog 1.60457274.mp4:a15_s06_e01_c04
+S6/Videos/WalkDog.60457274.mp4:a15_s06_e02_c04
+S6/Videos/WalkTogether 1.60457274.mp4:a16_s06_e01_c04
+S6/Videos/WalkTogether.60457274.mp4:a16_s06_e02_c04
+S7/Videos/Directions 1.60457274.mp4:a02_s07_e01_c04
+S7/Videos/Directions.60457274.mp4:a02_s07_e02_c04
+S7/Videos/Discussion 1.60457274.mp4:a03_s07_e01_c04
+S7/Videos/Discussion.60457274.mp4:a03_s07_e02_c04
+S7/Videos/Eating 1.60457274.mp4:a04_s07_e01_c04
+S7/Videos/Eating.60457274.mp4:a04_s07_e02_c04
+S7/Videos/Greeting 1.60457274.mp4:a05_s07_e01_c04
+S7/Videos/Greeting.60457274.mp4:a05_s07_e02_c04
+S7/Videos/Phoning 2.60457274.mp4:a06_s07_e01_c04
+S7/Videos/Phoning.60457274.mp4:a06_s07_e02_c04
+S7/Videos/Posing 1.60457274.mp4:a07_s07_e01_c04
+S7/Videos/Posing.60457274.mp4:a07_s07_e02_c04
+S7/Videos/Purchases 1.60457274.mp4:a08_s07_e01_c04
+S7/Videos/Purchases.60457274.mp4:a08_s07_e02_c04
+S7/Videos/Sitting 1.60457274.mp4:a09_s07_e01_c04
+S7/Videos/Sitting.60457274.mp4:a09_s07_e02_c04
+S7/Videos/SittingDown.60457274.mp4:a10_s07_e01_c04
+S7/Videos/SittingDown 1.60457274.mp4:a10_s07_e02_c04
+S7/Videos/Smoking 1.60457274.mp4:a11_s07_e01_c04
+S7/Videos/Smoking.60457274.mp4:a11_s07_e02_c04
+S7/Videos/Photo.60457274.mp4:a12_s07_e01_c04
+S7/Videos/Photo 1.60457274.mp4:a12_s07_e02_c04
+S7/Videos/Waiting 1.60457274.mp4:a13_s07_e01_c04
+S7/Videos/Waiting 2.60457274.mp4:a13_s07_e02_c04
+S7/Videos/Walking 1.60457274.mp4:a14_s07_e01_c04
+S7/Videos/Walking 2.60457274.mp4:a14_s07_e02_c04
+S7/Videos/WalkDog 1.60457274.mp4:a15_s07_e01_c04
+S7/Videos/WalkDog.60457274.mp4:a15_s07_e02_c04
+S7/Videos/WalkTogether 1.60457274.mp4:a16_s07_e01_c04
+S7/Videos/WalkTogether.60457274.mp4:a16_s07_e02_c04
+S8/Videos/Directions 1.60457274.mp4:a02_s08_e01_c04
+S8/Videos/Directions.60457274.mp4:a02_s08_e02_c04
+S8/Videos/Discussion 1.60457274.mp4:a03_s08_e01_c04
+S8/Videos/Discussion.60457274.mp4:a03_s08_e02_c04
+S8/Videos/Eating 1.60457274.mp4:a04_s08_e01_c04
+S8/Videos/Eating.60457274.mp4:a04_s08_e02_c04
+S8/Videos/Greeting 1.60457274.mp4:a05_s08_e01_c04
+S8/Videos/Greeting.60457274.mp4:a05_s08_e02_c04
+S8/Videos/Phoning 1.60457274.mp4:a06_s08_e01_c04
+S8/Videos/Phoning.60457274.mp4:a06_s08_e02_c04
+S8/Videos/Posing 1.60457274.mp4:a07_s08_e01_c04
+S8/Videos/Posing.60457274.mp4:a07_s08_e02_c04
+S8/Videos/Purchases 1.60457274.mp4:a08_s08_e01_c04
+S8/Videos/Purchases.60457274.mp4:a08_s08_e02_c04
+S8/Videos/Sitting 1.60457274.mp4:a09_s08_e01_c04
+S8/Videos/Sitting.60457274.mp4:a09_s08_e02_c04
+S8/Videos/SittingDown.60457274.mp4:a10_s08_e01_c04
+S8/Videos/SittingDown 1.60457274.mp4:a10_s08_e02_c04
+S8/Videos/Smoking 1.60457274.mp4:a11_s08_e01_c04
+S8/Videos/Smoking.60457274.mp4:a11_s08_e02_c04
+S8/Videos/Photo 1.60457274.mp4:a12_s08_e01_c04
+S8/Videos/Photo.60457274.mp4:a12_s08_e02_c04
+S8/Videos/Waiting 1.60457274.mp4:a13_s08_e01_c04
+S8/Videos/Waiting.60457274.mp4:a13_s08_e02_c04
+S8/Videos/Walking 1.60457274.mp4:a14_s08_e01_c04
+S8/Videos/Walking.60457274.mp4:a14_s08_e02_c04
+S8/Videos/WalkDog 1.60457274.mp4:a15_s08_e01_c04
+S8/Videos/WalkDog.60457274.mp4:a15_s08_e02_c04
+S8/Videos/WalkTogether 1.60457274.mp4:a16_s08_e01_c04
+S8/Videos/WalkTogether 2.60457274.mp4:a16_s08_e02_c04
+S9/Videos/Directions 1.60457274.mp4:a02_s09_e01_c04
+S9/Videos/Directions.60457274.mp4:a02_s09_e02_c04
+S9/Videos/Discussion 1.60457274.mp4:a03_s09_e01_c04
+S9/Videos/Discussion 2.60457274.mp4:a03_s09_e02_c04
+S9/Videos/Eating 1.60457274.mp4:a04_s09_e01_c04
+S9/Videos/Eating.60457274.mp4:a04_s09_e02_c04
+S9/Videos/Greeting 1.60457274.mp4:a05_s09_e01_c04
+S9/Videos/Greeting.60457274.mp4:a05_s09_e02_c04
+S9/Videos/Phoning 1.60457274.mp4:a06_s09_e01_c04
+S9/Videos/Phoning.60457274.mp4:a06_s09_e02_c04
+S9/Videos/Posing 1.60457274.mp4:a07_s09_e01_c04
+S9/Videos/Posing.60457274.mp4:a07_s09_e02_c04
+S9/Videos/Purchases 1.60457274.mp4:a08_s09_e01_c04
+S9/Videos/Purchases.60457274.mp4:a08_s09_e02_c04
+S9/Videos/Sitting 1.60457274.mp4:a09_s09_e01_c04
+S9/Videos/Sitting.60457274.mp4:a09_s09_e02_c04
+S9/Videos/SittingDown.60457274.mp4:a10_s09_e01_c04
+S9/Videos/SittingDown 1.60457274.mp4:a10_s09_e02_c04
+S9/Videos/Smoking 1.60457274.mp4:a11_s09_e01_c04
+S9/Videos/Smoking.60457274.mp4:a11_s09_e02_c04
+S9/Videos/Photo 1.60457274.mp4:a12_s09_e01_c04
+S9/Videos/Photo.60457274.mp4:a12_s09_e02_c04
+S9/Videos/Waiting 1.60457274.mp4:a13_s09_e01_c04
+S9/Videos/Waiting.60457274.mp4:a13_s09_e02_c04
+S9/Videos/Walking 1.60457274.mp4:a14_s09_e01_c04
+S9/Videos/Walking.60457274.mp4:a14_s09_e02_c04
+S9/Videos/WalkDog 1.60457274.mp4:a15_s09_e01_c04
+S9/Videos/WalkDog.60457274.mp4:a15_s09_e02_c04
+S9/Videos/WalkTogether 1.60457274.mp4:a16_s09_e01_c04
+S9/Videos/WalkTogether.60457274.mp4:a16_s09_e02_c04
+S11/Videos/Directions 1.60457274.mp4:a02_s11_e01_c04
+S11/Videos/Directions.60457274.mp4:a02_s11_e02_c04
+S11/Videos/Discussion 1.60457274.mp4:a03_s11_e01_c04
+S11/Videos/Discussion 2.60457274.mp4:a03_s11_e02_c04
+S11/Videos/Eating 1.60457274.mp4:a04_s11_e01_c04
+S11/Videos/Eating.60457274.mp4:a04_s11_e02_c04
+S11/Videos/Greeting 2.60457274.mp4:a05_s11_e01_c04
+S11/Videos/Greeting.60457274.mp4:a05_s11_e02_c04
+S11/Videos/Phoning 3.60457274.mp4:a06_s11_e01_c04
+S11/Videos/Phoning 2.60457274.mp4:a06_s11_e02_c04
+S11/Videos/Posing 1.60457274.mp4:a07_s11_e01_c04
+S11/Videos/Posing.60457274.mp4:a07_s11_e02_c04
+S11/Videos/Purchases 1.60457274.mp4:a08_s11_e01_c04
+S11/Videos/Purchases.60457274.mp4:a08_s11_e02_c04
+S11/Videos/Sitting 1.60457274.mp4:a09_s11_e01_c04
+S11/Videos/Sitting.60457274.mp4:a09_s11_e02_c04
+S11/Videos/SittingDown.60457274.mp4:a10_s11_e01_c04
+S11/Videos/SittingDown 1.60457274.mp4:a10_s11_e02_c04
+S11/Videos/Smoking 2.60457274.mp4:a11_s11_e01_c04
+S11/Videos/Smoking.60457274.mp4:a11_s11_e02_c04
+S11/Videos/Photo 1.60457274.mp4:a12_s11_e01_c04
+S11/Videos/Photo.60457274.mp4:a12_s11_e02_c04
+S11/Videos/Waiting 1.60457274.mp4:a13_s11_e01_c04
+S11/Videos/Waiting.60457274.mp4:a13_s11_e02_c04
+S11/Videos/Walking 1.60457274.mp4:a14_s11_e01_c04
+S11/Videos/Walking.60457274.mp4:a14_s11_e02_c04
+S11/Videos/WalkDog 1.60457274.mp4:a15_s11_e01_c04
+S11/Videos/WalkDog.60457274.mp4:a15_s11_e02_c04
+S11/Videos/WalkTogether 1.60457274.mp4:a16_s11_e01_c04
+S11/Videos/WalkTogether.60457274.mp4:a16_s11_e02_c04
