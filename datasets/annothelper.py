@@ -1,7 +1,6 @@
 import os
 import sys
 
-import deephar
 from keras.utils.data_utils import get_file
 
 ORIGIN = 'https://github.com/dluvizon/deephar/releases/download/'
@@ -28,7 +27,7 @@ def check_h36m_dataset():
     try:
         h36m_path = os.path.join(os.getcwd(), 'datasets/Human3.6M/')
         annot_path = get_file(h36m_path + 'annotations.mat',
-                ORIGIN + 'h36m_annotations.mat',
+                ORIGIN + version + 'h36m_annotations.mat',
                 md5_hash='4067d52db61737fbebdec850238d87dd')
 
         if os.path.isdir(h36m_path + 'images') is False:
