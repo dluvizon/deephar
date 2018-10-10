@@ -3,6 +3,7 @@
 This software is provided as a supplementary material for our CVPR'18 paper:
 > 2D/3D Pose Estimation and Action Recognition using Multitask Deep Learning
 
+![Predictions](images/preds.png)
 
 
 ## Warning! This is a WIP!
@@ -13,7 +14,12 @@ make changes in that code.
 
 <!--The software only supports data format 'channels_last'.-->
 
-## Evaluation on public datasets
+## How to install
+
+Please refer to the [installation guide](INSTALL.md).
+
+
+## Evaluation
 
 <!--In order to reproduce the results reported in the paper, please make sure-->
 <!--that you are using the correct version by doing `git checkout v1.0-cvpr18`.-->
@@ -26,7 +32,7 @@ validation, run:
 ```
   python3 exp/mpii/eval_mpii_singleperson.py output/eval-mpii
 ```
-. The output will be stored in `output/eval-mpii/log.txt`.
+The output will be stored in `output/eval-mpii/log.txt`.
 
 
 ## Citing

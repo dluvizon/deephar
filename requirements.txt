@@ -1,0 +1,5 @@
+numpy>=1.13
+keras>=2.1.4
+scipy
+h5py
+opencv-python
