@@ -27,7 +27,7 @@ def check_h36m_dataset():
     try:
         h36m_path = os.path.join(os.getcwd(), 'datasets/Human3.6M/')
         annot_path = get_file(h36m_path + 'annotations.mat',
-                ORIGIN + version + 'h36m_annotations.mat',
+                ORIGIN + version + '/h36m_annotations.mat',
                 md5_hash='4067d52db61737fbebdec850238d87dd')
 
         if os.path.isdir(h36m_path + 'images') is False:
@@ -38,5 +38,22 @@ def check_h36m_dataset():
 
     except:
         sys.stderr.write('Error checking Human3.6M dataset!\n')
+        raise
+
+def check_pennaction_dataset():
+    version = 'v0.3'
+    try:
+        penn_path = os.path.join(os.getcwd(), 'datasets/PennAction/')
+        annot_path = get_file(penn_path + 'annotations.mat',
+                ORIGIN + version + '/penn_annotations.mat',
+                md5_hash='b37a2e72c0ba308bd7ad476bc2aa4d33')
+
+        if os.path.isdir(penn_path + 'images') is False:
+            raise Exception('PennAction dataset (frames) not found! '
+                    'You must download it by yourself from '
+                    'http://dreamdragon.github.io/PennAction')
+
+    except:
+        sys.stderr.write('Error checking PennAction dataset!\n')
         raise
 

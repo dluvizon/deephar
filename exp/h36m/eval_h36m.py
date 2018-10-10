@@ -37,6 +37,7 @@ logdir = './'
 if len(sys.argv) > 1:
     logdir = sys.argv[1]
     mkdir(logdir)
+    sys.stdout = open(str(logdir) + '/log.txt', 'w')
 
 num_blocks = 8
 batch_size = 24
