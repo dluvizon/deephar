@@ -12,7 +12,6 @@ During the next few days I will be uploading code and weights corresponding
 to the CVPR paper, which will be tagged appropriately. Meanwhile, I will still
 make changes in that code.
 
-<!--The software only supports data format 'channels_last'.-->
 
 ## How to install
 

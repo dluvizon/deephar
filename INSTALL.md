@@ -3,6 +3,12 @@
 This file is a simplified guide to install (set up) the software and the
 datasets.
 
+## Limitations
+
+Note that python3 is **required** and is used unless specified.
+
+On Keras and on TensorFlow, only data format 'channels_last' is supported.
+
 ## Dependencies
 
 Install required python packages before you continue:
