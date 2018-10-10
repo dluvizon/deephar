@@ -24,11 +24,13 @@ from h36m_tools import eval_human36m_sc_error
 sys.path.append(os.path.join(os.getcwd(), 'datasets'))
 import annothelper
 
-weights_file = ''
+annothelper.check_h36m_dataset()
+
+weights_file = 'weights_3DPE_H36M_cvpr18_Nov-2017.h5'
 TF_WEIGHTS_PATH = \
         'https://github.com/dluvizon/deephar/releases/download/v0.2/' \
         + weights_file
-md5_hash = ''
+md5_hash = 'af79f83ad939117d4ccc2cf1d4bd37d2'
 
 
 logdir = './'
@@ -43,7 +45,11 @@ num_joints = pa17j3d.num_joints
 
 model = reception.build(input_shape, num_joints, dim=3, num_blocks=num_blocks,
         ksize=(5, 5))
-model.load_weights('weights_0042.h5')
+
+"""Load pre-trained model."""
+weights_path = get_file(weights_file, TF_WEIGHTS_PATH, md5_hash=md5_hash,
+        cache_subdir='models')
+model.load_weights(weights_path)
 
 """Merge pose and visibility as a single output."""
 outputs = []

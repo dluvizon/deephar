@@ -106,7 +106,7 @@ class Human36M(object):
             self.poselayout.dim))
 
         for i in range(len(objframes)):
-            image = 'images.new/%s/%05d.jpg' % (seq.name, objframes[i].f)
+            image = 'images/%s/%05d.jpg' % (seq.name, objframes[i].f)
             imgt = T(Image.open(os.path.join(self.dataset_path, image)))
 
             imgt.rotate_crop(dconf['angle'], objpos, winsize)

@@ -25,13 +25,26 @@ Please refer to the [installation guide](INSTALL.md).
 
 ### 2D pose estimation on MPII
 
-This model reached 91.2% on the test set using multi-crop and horizontal
-flipping, and 89.1% on the validation set, single-crop. To reproduce results on
-validation, run:
+The model trained on MPII only reached 91.2% on the test set using multi-crop
+and horizontal flipping, and 89.1% on the validation set, single-crop.
+To reproduce results on validation, do:
 ```
   python3 exp/mpii/eval_mpii_singleperson.py output/eval-mpii
 ```
 The output will be stored in `output/eval-mpii/log.txt`.
+
+### 3D pose estimation on Human3.6M
+
+This model was trained using MPII and Human3.6M data.
+Evaluation on Human3.6M is performed on the validation set.
+To reproduce our results, do:
+```
+  python3 exp/h36m/eval_h36m.py output/eval-h36m
+```
+The mean per joint position error is 55.1 mm on single crop.
+Note that some scores on individual activities differ from reported results
+on the paper. That is because for the paper we computed scores using one frame
+every 60, instead of using one frame every 64. The average score is the same.
 
 
 ## Citing
