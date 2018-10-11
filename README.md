@@ -5,6 +5,8 @@ This software is provided as a supplementary material for our CVPR'18 paper:
 
 ![Predictions](images/preds.png)
 
+A demonstration video can be seen [here](https://www.youtube.com/watch?v=MNEZACbFA4Y&t=6s).
+
 
 ## Warning! This is a WIP!
 
