@@ -15,6 +15,10 @@ def printcn(color, vmsg):
     print (color + vmsg + ENDC)
     sys.stdout.flush()
 
+def printnl(vmsg):
+    sys.stdout.write(vmsg + '\n')
+    sys.stdout.flush()
+
 def warning(vmsg):
     sys.stdout.write(WARNING + vmsg + ENDC + '\n')
     sys.stdout.flush()

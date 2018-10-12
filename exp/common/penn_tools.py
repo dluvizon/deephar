@@ -82,6 +82,109 @@ def eval_singleclip_gt_bbox_generator(model, datagen, verbose=1, logdir=None):
     return scores
 
 
+def eval_multiclip_dataset(model, penn, bboxes_file=None,
+        logdir=None, verbose=1):
+    """If bboxes_file if not given, use ground truth bounding boxes."""
+
+    num_samples = penn.get_length(TEST_MODE)
+    num_frames = penn.clip_length()
+    num_blocks = len(model.outputs)
+
+    """Save and reset some original configs from the dataset."""
+    org_hflip = penn.dataconf.fixed_hflip
+    org_use_gt_bbox = penn.use_gt_bbox
+
+    subsampling = 2
+    cnt_corr = 0
+    cnt_total = 0
+
+    action_shape = (num_samples,) + penn.get_shape('pennaction')
+    a_true = np.zeros(action_shape)
+    a_pred = np.ones((num_blocks,) + action_shape)
+    missing_clips = {}
+
+    if bboxes_file is not None:
+        with open(bboxes_file, 'r') as fid:
+            bboxes_data = json.load(fid)
+        penn.use_gt_bbox = False
+        bboxes_info = 'Using bounding boxes from file "{}"'.format(bboxes_file)
+    else:
+        bboxes_data = None
+        penn.use_gt_bbox = True
+        bboxes_info = 'Using ground truth bounding boxes.'
+
+    for i in range(num_samples):
+        if verbose:
+            printc(OKBLUE, '%04d/%04d\t' % (i, num_samples))
+
+        frame_list = penn.get_clip_index(i, TEST_MODE, subsamples=[subsampling])
+
+        """Variable to hold all preditions for this sequence.
+        2x frame_list due to hflip.
+        """
+        allpred = np.ones((num_blocks, 2*len(frame_list)) + action_shape[1:])
+
+        for f in range(len(frame_list)):
+            for hflip in range(2):
+                preds_clip = []
+                try:
+                    penn.dataconf.fixed_hflip = hflip # Force horizontal flip
+
+                    bbox = None
+                    if bboxes_data is not None:
+                        key = '%04d.%d.%03d.%d' % (i, subsampling, f, hflip)
+                        try:
+                            bbox = np.array(bboxes_data[key])
+                        except:
+                            warning('Missing bounding box key ' + str(key))
+
+                    """Load clip and predict action."""
+                    data = penn.get_data(i, TEST_MODE, frame_list=frame_list[f],
+                            bbox=bbox)
+                    a_true[i, :] = data['pennaction']
+
+                    pred = model.predict(np.expand_dims(data['frame'], axis=0))
+                    for b in range(num_blocks):
+                        allpred[b, 2*f+hflip, :] = pred[b][0]
+                        a_pred[b, i, :] *= pred[b][0]
+
+                    if np.argmax(a_true[i]) != np.argmax(a_pred[-1, i]):
+                        missing_clips['%04d.%03d.%d' % (i, f, hflip)] = [
+                                int(np.argmax(a_true[i])),
+                                int(np.argmax(a_pred[-1, i]))]
+
+                except Exception as e:
+                    warning('eval_multiclip, exception on sample ' \
+                            + str(i) + ' frame ' + str(f) + ': ' + str(e))
+
+        if verbose:
+            cor = int(np.argmax(a_true[i]) == np.argmax(a_pred[-1, i]))
+
+            cnt_total += 1
+            cnt_corr += cor
+            printnl('%d : %.1f' % (cor, 100 * cnt_corr / cnt_total))
+
+    if logdir is not None:
+        np.save('%s/allpred.npy' % logdir, allpred)
+        np.save('%s/a_true.npy' % logdir, a_true)
+        with open(os.path.join(logdir, 'missing-clips.json'), 'w') as fid:
+            json.dump(missing_clips, fid)
+
+    a_true = np.expand_dims(a_true, axis=0)
+    a_true = np.tile(a_true, (num_blocks, 1, 1))
+    correct = np.argmax(a_true, axis=-1) == np.argmax(a_pred, axis=-1)
+    scores = 100*np.sum(correct, axis=-1) / num_samples
+    if verbose:
+        printcn(WARNING, 'PennAction, multi-clip. ' + bboxes_info + '\n')
+        printcn(WARNING, np.array2string(np.array(scores), precision=2))
+        printcn(WARNING, 'PennAction best: %.2f' % max(scores))
+
+    penn.dataconf.fixed_hflip = org_hflip
+    penn.use_gt_bbox = org_use_gt_bbox
+
+    return scores
+
+
 class PennActionEvalCallback(Callback):
 
     def __init__(self, data, batch_size=1, eval_model=None,

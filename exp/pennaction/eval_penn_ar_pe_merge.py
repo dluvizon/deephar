@@ -21,17 +21,18 @@ from deephar.utils import *
 
 sys.path.append(os.path.join(os.getcwd(), 'exp/common'))
 from penn_tools import eval_singleclip_generator
+from penn_tools import eval_multiclip_dataset
 
 sys.path.append(os.path.join(os.getcwd(), 'datasets'))
 import annothelper
 
-annothelper.check_penn_dataset()
+annothelper.check_pennaction_dataset()
 
-weights_file = ''
+weights_file = 'weights_AR_merge_ep074_26-10-17.h5'
 TF_WEIGHTS_PATH = \
         'https://github.com/dluvizon/deephar/releases/download/v0.3/' \
         + weights_file
-md5_hash = ''
+md5_hash = 'f53f89257077616a79a6c1cd1702d50f'
 
 logdir = './'
 if len(sys.argv) > 1:
@@ -41,7 +42,7 @@ if len(sys.argv) > 1:
 
 
 num_frames = 16
-use_bbox = True
+use_bbox = False
 num_blocks = 4
 batch_size = 2
 input_shape = pennaction_dataconf.input_shape
@@ -56,7 +57,10 @@ model = action.build_merge_model(model_pe, num_actions, input_shape,
         num_frames, num_joints, num_blocks, pose_dim=2, pose_net_version='v1',
         full_trainable=False)
 
-model.load_weights('weights_AR_merge_ep074_26-10-17.h5')
+"""Load pre-trained model."""
+weights_path = get_file(weights_file, TF_WEIGHTS_PATH, md5_hash=md5_hash,
+        cache_subdir='models')
+model.load_weights(weights_path)
 
 """Load PennAction dataset."""
 penn_seq = PennAction('datasets/PennAction', pennaction_dataconf,
@@ -66,16 +70,8 @@ penn_seq = PennAction('datasets/PennAction', pennaction_dataconf,
 penn_te = BatchLoader(penn_seq, ['frame'], ['pennaction'], TEST_MODE,
         batch_size=1, shuffle=False)
 
-printcn(OKGREEN, 'Evaluation on single clip using GT bbox')
-eval_singleclip_generator(model, penn_te, logdir=logdir)
 
-
-printcn(OKGREEN, 'Evaluation on multi clip using predicted bbox')
-model_pe = reception.build(input_shape, num_joints, dim=2,
-        num_blocks=num_blocks, num_context_per_joint=2, ksize=(5, 5))
-model_pe.load_weights('trained/weights_reception_5x5_MPII+PA_ep100_25-10-17.h5')
-
-ret_pred = []
-eval_mc_bb_pe_x(model, model_pe, fte, ate, ds, ret_pred=ret_pred,
+printcn(OKGREEN, 'Evaluation on PennAction multi-clip using predicted bboxes')
+eval_multiclip_dataset(model, penn_seq,
+        bboxes_file='datasets/PennAction/penn_pred_bboxes_16f.json',
         logdir=logdir)
-

@@ -6,6 +6,7 @@ from deephar.utils.io import FAIL
 from deephar.utils.io import ENDC
 from deephar.utils.io import printc
 from deephar.utils.io import printcn
+from deephar.utils.io import printnl
 from deephar.utils.io import warning
 from deephar.utils.io import sprintcn
 from deephar.utils.io import sizeof_fmt

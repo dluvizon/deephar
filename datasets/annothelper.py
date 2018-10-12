@@ -47,8 +47,11 @@ def check_pennaction_dataset():
         annot_path = get_file(penn_path + 'annotations.mat',
                 ORIGIN + version + '/penn_annotations.mat',
                 md5_hash='b37a2e72c0ba308bd7ad476bc2aa4d33')
+        bbox_path = get_file(penn_path + 'penn_pred_bboxes_16f.json',
+                ORIGIN + version + '/penn_pred_bboxes_16f.json',
+                md5_hash='30b124a919185cb031b928bc6154fa9b')
 
-        if os.path.isdir(penn_path + 'images') is False:
+        if os.path.isdir(penn_path + 'frames') is False:
             raise Exception('PennAction dataset (frames) not found! '
                     'You must download it by yourself from '
                     'http://dreamdragon.github.io/PennAction')
