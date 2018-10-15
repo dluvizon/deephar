@@ -6,8 +6,6 @@ if os.path.realpath(os.getcwd()) != os.path.dirname(os.path.realpath(__file__)):
 
 import deephar
 
-from keras.models import Model
-from keras.layers import concatenate
 from keras.utils.data_utils import get_file
 
 from deephar.config import pennaction_dataconf
