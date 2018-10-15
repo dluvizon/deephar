@@ -60,3 +60,11 @@ def check_pennaction_dataset():
         sys.stderr.write('Error checking PennAction dataset!\n')
         raise
 
+def check_ntu_dataset():
+    version = 'v0.3'
+    try:
+        pass
+    except:
+        sys.stderr.write('Error checking NTU dataset!\n')
+        raise
+
