@@ -25,11 +25,15 @@ Images from MPII should be manually downloaded and placed
 at `datasets/MPII/images`.
 
 Videos from Human3.6M should be manually downloaded and placed
-at `datasets/Human3.6M/S*`, e.g. S1, S2, S3, etc. for each subject.
+in `datasets/Human3.6M/S*`, e.g. S1, S2, S3, etc. for each subject.
 After that, extract videos with:
 ```
   cd datasets/Human3.6M
   python2 vid2jpeg.py vid2jpeg.txt
 ```
 Python2 is used here due to the dependency on cv2 package.
+
+Video frames from PennAction should be manually downloaded and extracted
+in `datasets/PennAction/frames`. The pose annotations and predicted bounding
+boxes will be automatically downloaded by this software.
 
