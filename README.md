@@ -11,7 +11,7 @@ A demonstration video can be seen [here](https://www.youtube.com/watch?v=MNEZACb
 ## Warning! This is a WIP!
 
 During the next few days I will be uploading code and weights corresponding
-to the CVPR paper, which will be tagged appropriately. Meanwhile, I will still
+to our CVPR paper, which will be tagged appropriately. Meanwhile, I will still
 make changes in that code.
 
 
@@ -27,8 +27,9 @@ Please refer to the [installation guide](INSTALL.md).
 
 ### 2D pose estimation on MPII
 
-The model trained on MPII only reached 91.2% on the test set using multi-crop
-and horizontal flipping, and 89.1% on the validation set, single-crop.
+The model trained on MPII data reached 91.2% on the test set using multi-crop
+and horizontal flipping data augmentation, and 89.1% on the validation set,
+single-crop.
 To reproduce results on validation, do:
 ```
   python3 exp/mpii/eval_mpii_singleperson.py output/eval-mpii
@@ -47,6 +48,16 @@ The mean per joint position error is 55.1 mm on single crop.
 Note that some scores on individual activities differ from reported results
 on the paper. That is because for the paper we computed scores using one frame
 every 60, instead of using one frame every 64. The average score is the same.
+
+### 2D action recognition on PennAction
+
+For 2D action recognition, the pose estimation model was trained on mixed
+data from MPII and PennAction, and the full model for action recognition was
+trained and fine-tuned on PennAction only.
+To reproduce our scores, do:
+```
+  python3 exp/pennaction/eval_penn_ar_pe_merge.py output/eval-penn
+```
 
 
 ## Citing
