@@ -18,17 +18,18 @@ from deephar.models import action
 from deephar.utils import *
 
 sys.path.append(os.path.join(os.getcwd(), 'exp/common'))
+from ntu_tools import eval_singleclip_generator
 
 sys.path.append(os.path.join(os.getcwd(), 'datasets'))
 import annothelper
 
 annothelper.check_ntu_dataset()
 
-weights_file = ''
+weights_file = 'weights_AR_merge_NTU_v2.h5'
 TF_WEIGHTS_PATH = \
-        'https://github.com/dluvizon/deephar/releases/download/v0.3/' \
+        'https://github.com/dluvizon/deephar/releases/download/v0.4/' \
         + weights_file
-md5_hash = ''
+md5_hash = 'ff98d70a7f6bc5976cc11c7a5760e8b7'
 
 logdir = './'
 if len(sys.argv) > 1:
@@ -56,14 +57,18 @@ model = action.build_merge_model(model_pe, num_actions, input_shape,
         num_context_per_joint=0, pose_net_version='v2')
 
 """Load pre-trained model."""
-model.load_weights('weights_0052.h5')
+weights_path = get_file(weights_file, TF_WEIGHTS_PATH, md5_hash=md5_hash,
+        cache_subdir='models')
+model.load_weights(weights_path)
 
 """Load NTU dataset."""
-ntu = Ntu(datasetpath('NTU'), ntu_dataconf, poselayout=pa21j3d,
-        topology='sequences', use_gt_bbox=True, clip_size=num_frames, num_S=1)
+ntu = Ntu('datasets/NTU', ntu_ar_dataconf, poselayout=pa20j3d,
+        topology='sequences', use_gt_bbox=True, clip_size=num_frames)
 
 ntu_te = BatchLoader(ntu, ['frame'], ['ntuaction'], TEST_MODE,
         batch_size=1, shuffle=False)
 
 printcn(OKGREEN, 'Evaluation on NTU single-clip using GT bboxes')
+
+eval_singleclip_generator(model, ntu_te)
 
