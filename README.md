@@ -59,6 +59,16 @@ To reproduce our scores, do:
   python3 exp/pennaction/eval_penn_ar_pe_merge.py output/eval-penn
 ```
 
+### 3D action recognition on NTU
+
+For 3D action recognition, the pose estimation model was trained on mixed
+data from MPII, Human3.6 and NTU, and the full model for action recognition was
+trained and fine-tuned on NTU only.
+To reproduce our scores, do:
+```
+  python3 exp/ntu/eval_ntu_ar_pe_merge.py
+```
+
 
 ## Citing
 
