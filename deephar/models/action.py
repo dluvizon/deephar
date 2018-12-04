@@ -66,9 +66,7 @@ def build_pose_model(num_joints, num_actions, num_temp_frames=None, pose_dim=2,
         a = conv_bn_act(x, 12, (3, 1))
         b = conv_bn_act(x, 24, (3, 3))
         c = conv_bn_act(x, 36, (3, 5))
-        # FIXME: typo error in the next line, but weights are already trained,
-        # so it will be fixed later.
-        a = concatenate([a, b, c])
+        x = concatenate([a, b, c])
         a = conv_bn(x, 112, (3, 3))
         b = conv_bn(x, 64, (1, 1))
         b = conv_bn(b, 112, (3, 3))
