@@ -49,7 +49,8 @@ input_shape = ntu_ar_dataconf.input_shape
 
 """Build the pose estimation model."""
 model_pe = reception.build(input_shape, num_joints, dim=pose_dim,
-        num_blocks=num_blocks, depth_maps=depth_maps, ksize=(5, 5))
+        num_blocks=num_blocks, depth_maps=depth_maps, ksize=(5, 5),
+        concat_pose_confidence=False)
 
 """Build the full model using the previous pose estimation one."""
 model = action.build_merge_model(model_pe, num_actions, input_shape,

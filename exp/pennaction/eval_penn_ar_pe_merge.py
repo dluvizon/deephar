@@ -49,7 +49,8 @@ num_actions = 15
 
 """Build pose and action models."""
 model_pe = reception.build(input_shape, num_joints, dim=2,
-        num_blocks=num_blocks, num_context_per_joint=2, ksize=(5, 5))
+        num_blocks=num_blocks, num_context_per_joint=2, ksize=(5, 5),
+        concat_pose_confidence=False)
 
 model = action.build_merge_model(model_pe, num_actions, input_shape,
         num_frames, num_joints, num_blocks, pose_dim=2, pose_net_version='v1',

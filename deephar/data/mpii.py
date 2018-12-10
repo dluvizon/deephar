@@ -73,7 +73,7 @@ class MpiiSinglePerson(object):
             self.images = images
 
         except:
-            warning('Error loading MPII dataset!')
+            warning('Error loading the MPII dataset!')
             raise
 
     def load_image(self, key, mode):

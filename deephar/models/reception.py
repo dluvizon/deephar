@@ -230,7 +230,8 @@ def build(input_shape, num_joints, dim,
         ksize=(3, 3),
         export_heatmaps=False,
         export_vfeat_block=None,
-        old_model=False):
+        old_model=False,
+        concat_pose_confidence=True):
 
     if dim == 2:
         if num_context_per_joint is None:
@@ -296,8 +297,12 @@ def build(input_shape, num_joints, dim,
             pose, visible, hm = pose_regression_3d(h, num_joints, depth_maps,
                     sam_s_model, sam_z_model)
 
-        outputs.append(pose)
-        outputs.append(visible)
+        if concat_pose_confidence:
+            outputs.append(concatenate([pose, visible]))
+        else:
+            outputs.append(pose)
+            outputs.append(visible)
+
         if export_heatmaps:
             outputs.append(hm)
 

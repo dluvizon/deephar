@@ -61,9 +61,10 @@ def absulute_pred(model, frames, afmat, outidx, batch_size=8):
 
 
 def eval_singleperson_pckh(model, fval, pval, afmat_val, headsize_val,
-        batch_size=8, refp=0.5, map_to_pa16j=None, pred_per_block=1, verbose=1):
+        win=None, batch_size=8, refp=0.5, map_to_pa16j=None, pred_per_block=1,
+        verbose=1):
 
-    input_shape = model.input_shape
+    input_shape = model.get_input_shape_at(0)
     if len(input_shape) == 5:
         """Video clip processing."""
         num_frames = input_shape[1]
@@ -77,7 +78,15 @@ def eval_singleperson_pckh(model, fval, pval, afmat_val, headsize_val,
         headsize_val = headsize_val[0:num_batches*num_frames]
 
     num_blocks = int(len(model.outputs) / pred_per_block)
-    pred = model.predict(fval, batch_size=batch_size, verbose=1)
+    inputs = [fval]
+    if win is not None:
+        num_blocks -= 1
+        inputs.append(win)
+
+    pred = model.predict(inputs, batch_size=batch_size, verbose=1)
+    if win is not None:
+        del pred[0]
+
     A = afmat_val[:]
     y_true = pval[:]
 
@@ -122,13 +131,15 @@ def eval_singleperson_pckh(model, fval, pval, afmat_val, headsize_val,
 
 class MpiiEvalCallback(Callback):
 
-    def __init__(self, fval, pval, afmat_val, headsize_val, batch_size=16,
-            eval_model=None, map_to_pa16j=None, pred_per_block=1, logdir=None):
+    def __init__(self, fval, pval, afmat_val, headsize_val,
+            win=None, batch_size=16, eval_model=None, map_to_pa16j=None,
+            pred_per_block=1, logdir=None):
 
         self.fval = fval
         self.pval = pval[:, :, 0:2]
         self.afmat_val = afmat_val
         self.headsize_val = headsize_val
+        self.win = win
         self.batch_size = batch_size
         self.eval_model = eval_model
         self.map_to_pa16j = map_to_pa16j
@@ -143,8 +154,8 @@ class MpiiEvalCallback(Callback):
             model = self.model
 
         scores = eval_singleperson_pckh(model, self.fval, self.pval,
-                self.afmat_val, self.headsize_val, batch_size=self.batch_size,
-                map_to_pa16j=self.map_to_pa16j,
+                self.afmat_val, self.headsize_val, win=self.win,
+                batch_size=self.batch_size, map_to_pa16j=self.map_to_pa16j,
                 pred_per_block=self.pred_per_block)
 
         epoch += 1

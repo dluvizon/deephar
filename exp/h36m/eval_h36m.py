@@ -45,7 +45,7 @@ input_shape = human36m_dataconf.input_shape
 num_joints = pa17j3d.num_joints
 
 model = reception.build(input_shape, num_joints, dim=3, num_blocks=num_blocks,
-        ksize=(5, 5))
+        ksize=(5, 5), concat_pose_confidence=False)
 
 """Load pre-trained model."""
 weights_path = get_file(weights_file, TF_WEIGHTS_PATH, md5_hash=md5_hash,
