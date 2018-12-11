@@ -11,7 +11,6 @@ from keras.utils import Sequence
 
 from deephar.utils import *
 
-
 class BatchLoader(Sequence):
     """Loader class for generic datasets, based on the Sequence class from
     Keras.
@@ -44,7 +43,7 @@ class BatchLoader(Sequence):
             and Human3.6M for training with action recognition at the same time
             (to further mergning with an action dataset).
     """
-    BATCH_HOLD = 10
+    BATCH_HOLD = 4
 
     def __init__(self, dataset, x_dictkeys, y_dictkeys, mode,
             batch_size=24, num_predictions=1, shuffle=True,
@@ -71,7 +70,7 @@ class BatchLoader(Sequence):
             for i in range(1, len(self.datasets)):
                 assert self.datasets[i].get_shape(dkey) == \
                         self.datasets[i-1].get_shape(dkey), \
-                        'Incompatible dataset shape for dictkey ' + str(dkey)
+                        'Incompatible dataset shape for dictkey {}'.format(dkey)
 
         self.batch_sizes = batch_size
         if not isinstance(self.batch_sizes, list):
@@ -80,7 +79,17 @@ class BatchLoader(Sequence):
         assert len(self.datasets) == len(self.batch_sizes), \
                 'dataset and batch_size should be lists with the same length.'
 
-        self.num_predictions = num_predictions
+        if isinstance(num_predictions, int):
+            self.num_predictions = len(self.y_dictkeys)*[num_predictions]
+        elif isinstance(num_predictions, list):
+            self.num_predictions = num_predictions
+        else:
+            raise ValueError(
+                'Invalid num_predictions ({})'.format(num_predictions))
+
+        assert len(self.num_predictions) == len(self.y_dictkeys), \
+                'num_predictions and y_dictkeys not matching'
+
         self.mode = mode
         self.shuffle = shuffle
 
@@ -113,8 +122,8 @@ class BatchLoader(Sequence):
             x_batch.append(data_dict[dkey])
 
         y_batch = []
-        for i in range(self.num_predictions):
-            for dkey in self.y_dictkeys:
+        for i, dkey in enumerate(self.y_dictkeys):
+            for _ in range(self.num_predictions[i]):
                 y_batch.append(data_dict[dkey])
 
         return x_batch, y_batch
@@ -191,4 +200,5 @@ class BatchLoader(Sequence):
     @property
     def num_datasets(self):
         return len(self.datasets)
+
 

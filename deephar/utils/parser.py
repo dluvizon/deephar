@@ -160,7 +160,7 @@ class ImageFrame(BaseElement):
                 break
 
 
-class Sequence(BaseElement):
+class SequenceOld(BaseElement):
     def __init__(self, parser, dim, num_joints):
         BaseElement.__init__(self)
         self.mode = -1
@@ -215,7 +215,7 @@ def std_dat_parser(anno_obj, fid):
             anno_obj.sequences = []
             for i in range(anno_obj.num_sequences):
                 anno_obj.sequences.append(
-                        Sequence(parser, anno_obj.dim, anno_obj.num_joints))
+                        SequenceOld(parser, anno_obj.dim, anno_obj.num_joints))
             BaseParser.avg_num_frames /= len(anno_obj.sequences)
 
 class Annotation(object):

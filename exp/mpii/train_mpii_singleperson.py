@@ -6,10 +6,6 @@ if os.path.realpath(os.getcwd()) != os.path.dirname(os.path.realpath(__file__)):
 
 import deephar
 
-from keras.models import Model
-from keras.layers import concatenate
-from keras.utils.data_utils import get_file
-
 from deephar.config import mpii_sp_dataconf
 
 from deephar.data import MpiiSinglePerson
@@ -17,7 +13,12 @@ from deephar.data import BatchLoader
 
 from deephar.models import reception
 from deephar.losses import pose_regression_loss
+
+from keras.models import Model
+from keras.layers import concatenate
+from keras.utils.data_utils import get_file
 from keras.optimizers import RMSprop
+
 from deephar.utils import *
 
 from keras.callbacks import LearningRateScheduler

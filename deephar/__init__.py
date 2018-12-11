@@ -5,7 +5,7 @@ if sys.version_info[0] < 3:
     sys.stderr.write('You must use Python 3\n')
     sys.exit()
 
-__version__ = '0.3.0'
+__version__ = '0.4.1'
 
 info = 'Initializing deephar v.{}\n'.format(__version__)
 sys.stderr.write(info)

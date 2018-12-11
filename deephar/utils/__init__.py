@@ -41,7 +41,7 @@ from deephar.utils.parser import TRAIN_MODE
 from deephar.utils.parser import VALID_MODE
 from deephar.utils.parser import Entity
 from deephar.utils.parser import ImageFrame
-from deephar.utils.parser import Sequence
+from deephar.utils.parser import SequenceOld
 from deephar.utils.parser import Annotation
 
 from deephar.utils.plot import show

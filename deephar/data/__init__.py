@@ -1,8 +1,6 @@
-# -*- coding: utf-8 -*-
+from .loader import BatchLoader
 
-from deephar.data.loader import BatchLoader
-
-from deephar.data.mpii import MpiiSinglePerson
-from deephar.data.human36m import Human36M
-from deephar.data.pennaction import PennAction
-from deephar.data.ntu import Ntu
+from .mpii import MpiiSinglePerson
+from .human36m import Human36M
+from .pennaction import PennAction
+from .ntu import Ntu
