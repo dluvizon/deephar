@@ -83,7 +83,7 @@ def lr_scheduler(epoch, lr):
     return newlr
 
 callbacks = []
-callbacks.append(SaveModel(weights_path))
+callbacks.append(SaveModel(weights_file))
 callbacks.append(LearningRateScheduler(lr_scheduler))
 callbacks.append(eval_callback)
 
