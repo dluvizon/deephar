@@ -179,6 +179,7 @@ S9/Videos/WalkDog.54138969.mp4:a15_s09_e02_c01
 S9/Videos/WalkTogether 1.54138969.mp4:a16_s09_e01_c01
 S9/Videos/WalkTogether.54138969.mp4:a16_s09_e02_c01
 S11/Videos/Directions 1.54138969.mp4:a02_s11_e01_c01
+S11/Videos/Directions.54138969.mp4:a02_s11_e02_c01
 S11/Videos/Discussion 1.54138969.mp4:a03_s11_e01_c01
 S11/Videos/Discussion 2.54138969.mp4:a03_s11_e02_c01
 S11/Videos/Eating 1.54138969.mp4:a04_s11_e01_c01
