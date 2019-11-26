@@ -8,11 +8,17 @@ This software is provided as a supplementary material for our CVPR'18 paper:
 A demonstration video can be seen [here](https://www.youtube.com/watch?v=MNEZACbFA4Y&t=6s).
 
 
-## Warning! This is a WIP!
+## Notice
 
-During the next few days I will be uploading code and weights corresponding
-to our CVPR paper, which will be tagged appropriately. Meanwhile, I will still
-make changes in that code.
+This repo has been updated with our recent code for for multi-task human
+pose estimation and action recognition, related to our submission
+```
+Multi-task Deep Learning for Real-Time 3D Human Pose Estimation and Action Recognition
+```.
+
+The README instructions, INSTALL, and auxiliary script will be updated accordinly during the next few days.
+
+For referring the source code version related to our CVPR'18 paper, please checkout the branch [cvpr18](https://github.com/dluvizon/deephar/tree/cvpr18).
 
 
 ## How to install
