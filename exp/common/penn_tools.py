@@ -19,7 +19,7 @@ def eval_singleclip_gt_bbox(model, x_te, action_te, batch_size=1, verbose=1):
     dt = time.time() - start
 
     if verbose:
-        printc(WARNING, 'PennAction, single-clip, GT bbox, action acc.%:')
+        printc(WARNING, 'PennAction, single-clip, action acc.%:')
 
     scores = []
     for b in range(num_blocks):
@@ -58,7 +58,7 @@ def eval_singleclip_gt_bbox_generator(model, datagen, verbose=1, logdir=None):
 
     dt = time.time() - start
     if verbose:
-        printc(WARNING, 'PennAction, single-clip, GT bbox, action acc.%:')
+        printc(WARNING, 'PennAction, single-clip, action acc.%:')
 
     if logdir is not None:
         logpath = os.path.join(logdir, 'single-clip')
@@ -82,19 +82,16 @@ def eval_singleclip_gt_bbox_generator(model, datagen, verbose=1, logdir=None):
     return scores
 
 
-def eval_multiclip_dataset(model, penn, bboxes_file=None,
+def eval_multiclip_dataset(model, penn, subsampling, bboxes_file=None,
         logdir=None, verbose=1):
     """If bboxes_file if not given, use ground truth bounding boxes."""
 
     num_samples = penn.get_length(TEST_MODE)
-    num_frames = penn.clip_length()
     num_blocks = len(model.outputs)
 
     """Save and reset some original configs from the dataset."""
     org_hflip = penn.dataconf.fixed_hflip
-    org_use_gt_bbox = penn.use_gt_bbox
 
-    subsampling = 2
     cnt_corr = 0
     cnt_total = 0
 
@@ -102,16 +99,6 @@ def eval_multiclip_dataset(model, penn, bboxes_file=None,
     a_true = np.zeros(action_shape)
     a_pred = np.ones((num_blocks,) + action_shape)
     missing_clips = {}
-
-    if bboxes_file is not None:
-        with open(bboxes_file, 'r') as fid:
-            bboxes_data = json.load(fid)
-        penn.use_gt_bbox = False
-        bboxes_info = 'Using bounding boxes from file "{}"'.format(bboxes_file)
-    else:
-        bboxes_data = None
-        penn.use_gt_bbox = True
-        bboxes_info = 'Using ground truth bounding boxes.'
 
     for i in range(num_samples):
         if verbose:
@@ -130,17 +117,8 @@ def eval_multiclip_dataset(model, penn, bboxes_file=None,
                 try:
                     penn.dataconf.fixed_hflip = hflip # Force horizontal flip
 
-                    bbox = None
-                    if bboxes_data is not None:
-                        key = '%04d.%d.%03d.%d' % (i, subsampling, f, hflip)
-                        try:
-                            bbox = np.array(bboxes_data[key])
-                        except:
-                            warning('Missing bounding box key ' + str(key))
-
                     """Load clip and predict action."""
-                    data = penn.get_data(i, TEST_MODE, frame_list=frame_list[f],
-                            bbox=bbox)
+                    data = penn.get_data(i, TEST_MODE, frame_list=frame_list[f])
                     a_true[i, :] = data['pennaction']
 
                     pred = model.predict(np.expand_dims(data['frame'], axis=0))
@@ -175,12 +153,11 @@ def eval_multiclip_dataset(model, penn, bboxes_file=None,
     correct = np.argmax(a_true, axis=-1) == np.argmax(a_pred, axis=-1)
     scores = 100*np.sum(correct, axis=-1) / num_samples
     if verbose:
-        printcn(WARNING, 'PennAction, multi-clip. ' + bboxes_info + '\n')
+        printcn(WARNING, 'PennAction, multi-clip.\n')
         printcn(WARNING, np.array2string(np.array(scores), precision=2))
         printcn(WARNING, 'PennAction best: %.2f' % max(scores))
 
     penn.dataconf.fixed_hflip = org_hflip
-    penn.use_gt_bbox = org_use_gt_bbox
 
     return scores
 

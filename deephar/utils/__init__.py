@@ -43,6 +43,7 @@ from deephar.utils.parser import Entity
 from deephar.utils.parser import ImageFrame
 from deephar.utils.parser import SequenceOld
 from deephar.utils.parser import Annotation
+from deephar.utils.parser import appstr
 
 from deephar.utils.plot import show
 from deephar.utils.plot import draw

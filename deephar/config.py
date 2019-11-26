@@ -105,47 +105,91 @@ mpii_sp_dataconf = DataConfig(
 pennaction_dataconf = DataConfig(
         crop_resolution=(256, 256),
         angles=np.array(range(-30, 30+1, 5)),
-        scales=np.array([0.7, 1.0, 1.3, 2.5]),
-        trans_x=np.array(range(-40, 40+1, 5)),
-        trans_y=np.array(range(-40, 40+1, 5)),
-        subsampling=[1, 2]
-        )
-
-pennaction_ar_dataconf = DataConfig(
-        crop_resolution=(256, 256),
-        angles=np.array(range(-30, 30+1, 5)),
         scales=np.array([0.7, 1.0, 1.3]),
         trans_x=np.array(range(-40, 40+1, 5)),
-        trans_y=np.array(range(-40, 40+1, 5)),
-        subsampling=[1, 2, 3],
-        fixed_subsampling=2
+        trans_y=np.array(range(-10, 10+1, 5)),
+        subsampling=[4, 6, 8],
+        fixed_subsampling=6
+        )
+
+pennaction_pe_dataconf = DataConfig(
+        crop_resolution=(256, 256),
+        angles=np.array(range(-40, 40+1, 5)),
+        scales=np.array([0.7, 1.0, 1.3, 2.0]),
+        trans_x=np.array(range(-40, 40+1, 5)),
+        trans_y=np.array(range(-10, 10+1, 5)),
         )
 
 human36m_dataconf = DataConfig(
         crop_resolution=(256, 256),
         angles=np.array(range(-10, 10+1, 5)),
         scales=np.array([0.8, 1.0, 1.2]),
+        trans_x=np.array(range(-20, 20+1, 5)),
+        trans_y=np.array(range(-4, 4+1, 1)),
         geoocclusion=np.array(range(20, 90)),
         )
 
-ntu_ar_dataconf = DataConfig(
+ntu_dataconf = DataConfig(
         crop_resolution=(256, 256),
         angles=[0],
         scales=np.array([0.7, 1.0, 1.3]),
         trans_x=range(-40, 40+1, 5),
-        trans_y=range(-40, 40+1, 5),
-        subsampling=[1, 2, 3],
-        fixed_subsampling=2
+        trans_y=range(-10, 10+1, 5),
+        subsampling=[3, 4, 5],
+        fixed_subsampling=4
         )
 
 ntu_pe_dataconf = DataConfig(
         crop_resolution=(256, 256),
-        angles=np.array(range(-15, 15+1, 5)),
-        scales=np.array([0.8, 1.0, 1.2, 2.0]),
+        angles=np.array(range(-10, 10+1, 5)),
+        scales=np.array([0.7, 1.0, 1.3, 2.0]),
         trans_x=np.array(range(-40, 40+1, 5)),
         trans_y=np.array(range(-10, 10+1, 5)),
-        subsampling=[1, 2, 4]
         )
+
+class ModelConfig(object):
+    """Hyperparameters for models."""
+
+    def __init__(self, input_shape, poselayout,
+            num_actions=[],
+            num_pyramids=8,
+            action_pyramids=[1, 2], # list of pyramids to perform AR
+            num_levels=4,
+            kernel_size=(5, 5),
+            growth=96,
+            image_div=8,
+            predict_rootz=False,
+            downsampling_type='maxpooling',
+            pose_replica=False,
+            num_pose_features=128,
+            num_visual_features=128,
+            sam_alpha=1,
+            dbg_decoupled_pose=False,
+            dbg_decoupled_h=False):
+
+        self.input_shape = input_shape
+        self.num_joints = poselayout.num_joints
+        self.dim = poselayout.dim
+
+        assert type(num_actions) == list, 'num_actions should be a list'
+        self.num_actions = num_actions
+
+        self.num_pyramids = num_pyramids
+        self.action_pyramids = action_pyramids
+        self.num_levels = num_levels
+        self.kernel_size = kernel_size
+        self.growth = growth
+        self.image_div = image_div
+        self.predict_rootz = predict_rootz
+        self.downsampling_type = downsampling_type
+        self.pose_replica = pose_replica
+        self.num_pose_features = num_pose_features
+        self.num_visual_features = num_visual_features
+        self.sam_alpha = sam_alpha
+
+        """Debugging flags."""
+        self.dbg_decoupled_pose = dbg_decoupled_pose
+        self.dbg_decoupled_h = dbg_decoupled_h
 
 # Aliases.
 mpii_dataconf = mpii_sp_dataconf

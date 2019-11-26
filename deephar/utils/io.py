@@ -20,8 +20,8 @@ def printnl(vmsg):
     sys.stdout.flush()
 
 def warning(vmsg):
-    sys.stdout.write(WARNING + vmsg + ENDC + '\n')
-    sys.stdout.flush()
+    sys.stderr.write(WARNING + vmsg + ENDC + '\n')
+    sys.stderr.flush()
 
 def sprintcn(color, vmsg):
     return color + vmsg + ENDC + '\n'

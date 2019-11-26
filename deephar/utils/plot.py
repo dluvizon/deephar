@@ -8,6 +8,7 @@ from deephar.utils.io import printcn
 from deephar.utils.pose import pa16j2d
 from deephar.utils.pose import pa17j3d
 from deephar.utils.pose import pa20j3d
+from deephar.utils.colors import hex_colors
 
 try:
     from mpl_toolkits.mplot3d import Axes3D
@@ -70,20 +71,24 @@ def show(x, gray_scale=False, jet_cmap=False, filename=None):
         norm = plt.Normalize(vmin=x.min(), vmax=x.max())
         img = cmap(norm(x))
     if filename:
-        img.save(filename)
+        plt.imsave(filename, img)
     else:
-        img.show()
+        plt.imshow(img)
+        plt.show()
 
 
 def draw(x=None,
-        skels=None,
-        bboxes=None,
+        skels=[],
+        bboxes=[],
+        bbox_color='g',
         abs_pos=False,
         plot3d=False,
         single_window=False,
         figsize=(16,9),
         axis='on',
+        facecolor='white',
         azimuth=65,
+        dpi=100,
         filename=None):
 
     # Configure the ploting environment
@@ -99,7 +104,6 @@ def draw(x=None,
         h = None
     else:
         w,h = img.size
-
 
     def add_subimage(f, subplot, img):
         ax = f.add_subplot(subplot)
@@ -122,30 +126,30 @@ def draw(x=None,
 
     plt.axis(axis)
 
-    if isinstance(skels, list):
-        assert len(skels) == 2, 'Only two skeletons are supported'
-        _plot_skeleton_2d(ax[0], skels[0], h=h, w=w, joints=True, links=False)
-        _plot_skeleton_2d(ax[0], skels[1], h=h, w=w, joints=False, links=True)
-        if plot3d:
-            plot_3d_pose(skels[0], subplot=ax[-1], color=5*['k'],
-                    azimuth=azimuth)
-            plot_3d_pose(skels[1], subplot=ax[-1], azimuth=azimuth)
+    # Plotting skeletons if not None
+    if skels is not None:
+        if isinstance(skels, list) or len(skels.shape) == 3:
+            for s in skels:
+                plot_skeleton_2d(ax[0], s, h=h, w=w)
+            if plot3d:
+                plot_3d_pose(s, subplot=ax[-1], azimuth=azimuth)
+        else:
+            plot_skeleton_2d(ax[0], skels, h=h, w=w)
+            if plot3d:
+                plot_3d_pose(skels, subplot=ax[-1], azimuth=azimuth)
 
-    elif isinstance(skels, np.ndarray):
-        _plot_skeleton_2d(ax[0], skels, h=h, w=w)
-        if plot3d:
-            plot_3d_pose(skels, subplot=ax[-1], azimuth=azimuth)
-
-    # if isinstance(bboxes, list):
-        # for b in bboxes:
-            # _plot_bbox(ax[0], b, 'k')
-    # elif isinstance(bboxes, np.ndarray):
-        # _plot_bbox(ax[0], bboxes, 'k')
+    # Plotting bounding boxes if not None
     if bboxes is not None:
-        _plot_bbox(ax[0], bboxes, h=h, w=w)
+        if isinstance(bboxes, list) or len(bboxes.shape) == 3:
+            for b, c in zip(bboxes, bbox_color):
+                _plot_bbox(ax[0], b, h=h, w=w, c=c, lw=4)
+        else:
+            _plot_bbox(ax[0], bboxes, h=h, w=w, c=bbox_color, lw=4)
+
 
     if filename:
-        fig[0].savefig(filename, bbox_inches='tight', pad_inches=0)
+        fig[0].savefig(filename, bbox_inches='tight', pad_inches=0,
+                facecolor=facecolor, dpi=dpi)
         if plot3d and (single_window is False):
             fig[-1].savefig(filename + '.eps',
                     bbox_inches='tight', pad_inches=0)
@@ -172,7 +176,7 @@ def plot_3d_pose(pose, subplot=None, filename=None, color=None, lw=3,
         raise Exception('"matplotlib" is required for 3D pose plotting!')
 
     num_joints, dim = pose.shape
-    assert ((dim == 2) or (dim == 3)), 'Invalid pose dimension (%d)' % dim
+    assert dim in [2, 3], 'Invalid pose dimension (%d)' % dim
     assert ((num_joints == 16) or (num_joints == 17)) or (num_joints == 20), \
             'Unsupported number of joints (%d)' % num_joints
 
@@ -229,7 +233,7 @@ def plot_3d_pose(pose, subplot=None, filename=None, color=None, lw=3,
         plt.close(fig)
 
 
-def _plot_bbox(subplot, bbox, h=None, w=None, scale=16, lw=2, c='c'):
+def _plot_bbox(subplot, bbox, h=None, w=None, scale=16, lw=2, c=None):
     assert len(bbox) == 4
 
     b = bbox.copy()
@@ -240,12 +244,15 @@ def _plot_bbox(subplot, bbox, h=None, w=None, scale=16, lw=2, c='c'):
        b[1] *= h
        b[3] *= h
 
+    if c is None:
+        c = hex_colors[np.random.randint(len(hex_colors))]
+
     x = np.array([b[0], b[2], b[2], b[0], b[0]])
     y = np.array([b[1], b[1], b[3], b[3], b[1]])
     subplot.plot(x, y, lw=lw, c=c, zorder=1)
 
 
-def _plot_skeleton_2d(subplot, skel, h=None, w=None,
+def plot_skeleton_2d(subplot, skel, h=None, w=None,
         joints=True, links=True, scale=16, lw=4):
 
     s = skel.copy()

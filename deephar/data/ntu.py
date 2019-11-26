@@ -9,7 +9,7 @@ from deephar.utils import *
 
 use_small_images = True
 image_prefix = 'images-small' if use_small_images else 'images'
-video_subsample = None
+video_subsample = 2
 
 ACTION_LABELS = ['drink water', 'eat meal/snack', 'brushing teeth',
         'brushing hair', 'drop', 'pickup', 'throw', 'sitting down',
@@ -286,6 +286,23 @@ class Ntu(object):
         p[v==0, :] = np.nan
 
         return p, v
+
+    def get_clip_index(self, key, mode, subsamples=[2]):
+        assert self.topology == 'sequences', 'Topology not supported'
+
+        seq = self.sequences[mode][key]
+        index_list = []
+        for sub in subsamples:
+            start_frame = 0
+            while True:
+                last_frame = start_frame + self.clip_size * sub
+                if last_frame > len(seq):
+                    break
+                index_list.append(range(start_frame, last_frame, sub))
+                start_frame += int(self.clip_size / 2) + (sub - 1)
+
+        return index_list
+
 
     def clip_length(self):
         if self.topology == 'sequences':
