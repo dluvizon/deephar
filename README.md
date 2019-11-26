@@ -14,7 +14,7 @@ This repo has been updated with our recent code for for multi-task human
 pose estimation and action recognition, related to our submission
 ```
 Multi-task Deep Learning for Real-Time 3D Human Pose Estimation and Action Recognition
-```.
+```
 
 The README instructions, INSTALL, and auxiliary script will be updated accordinly during the next few days.
 
