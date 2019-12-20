@@ -10,8 +10,8 @@ A demonstration video can be seen [here](https://www.youtube.com/watch?v=MNEZACb
 
 ## Notice
 
-This repo has been updated with our recent code for for multi-task human
-pose estimation and action recognition, related to our submission
+This repo has been updated with our recent code for multi-task human
+pose estimation and action recognition, related to our submission [ [paper](https://arxiv.org/abs/1912.08077) ]:
 ```
 Multi-task Deep Learning for Real-Time 3D Human Pose Estimation and Action Recognition
 ```
