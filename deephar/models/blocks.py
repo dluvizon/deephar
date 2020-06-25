@@ -315,8 +315,8 @@ def build_softargmax_2d(input_shape, rho=0., name=None):
     if rho > 0:
         x = kl_divergence_regularizer(x, rho=rho)
 
-    x_x = lin_interpolation_2d(x, dim=0)
-    x_y = lin_interpolation_2d(x, dim=1)
+    x_x = lin_interpolation_2d(x, axis=0)
+    x_y = lin_interpolation_2d(x, axis=1)
     x = concatenate([x_x, x_y])
 
     model = Model(inputs=inp, outputs=x, name=name)
