@@ -44,7 +44,7 @@ The multitask model can be evaluated on MPII for pose estimation and on PennActi
 ```sh
   python3 exp/pennaction/eval_penn_multitask.py output/eval-penn
 ```
-The ourpur will be stored in `output/eval-penn/log.txt`
+The output will be stored in `output/eval-penn/log.txt`
 
 ### 3D pose estimation on Human3.6M
 
