@@ -485,9 +485,21 @@ def kronecker_prod(h, f, name='Kronecker_prod'):
         nj = K.int_shape(hm)[-1]
         nf = K.int_shape(x)[-1]
         hm = K.expand_dims(hm, axis=-1)
-        hm = K.tile(hm, (1, 1, 1, 1, 1, nf))
+        if len(K.int_shape(hm)) == 6:
+            hm = K.tile(hm, [1, 1, 1, 1, 1, nf])
+        elif len(K.int_shape(hm)) == 5:
+            hm = K.tile(hm, [1, 1, 1, 1, nf])
+        else:
+            raise ValueError(f'Invalid heatmap shape {hm}')
+
         x = K.expand_dims(x, axis=-2)
-        x = K.tile(x, (1, 1, 1, 1, nj, 1))
+        if len(K.int_shape(x)) == 6:
+            x = K.tile(x, [1, 1, 1, 1, nj, 1])
+        elif len(K.int_shape(x)) == 5:
+            x = K.tile(x, [1, 1, 1, nj, 1])
+        else:
+            raise ValueError(f'Invalid featuremap shape {x}')
+
         x = hm * x
         x = K.sum(x, axis=(2, 3))
 

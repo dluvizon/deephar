@@ -22,7 +22,6 @@ from deephar.utils import *
 from keras.models import Model
 
 sys.path.append(os.path.join(os.getcwd(), 'exp/common'))
-from datasetpath import datasetpath
 
 from generic import get_bbox_from_poses
 
@@ -32,15 +31,18 @@ if len(sys.argv) > 1:
     mkdir(logdir)
     sys.stdout = open(str(logdir) + '/log.txt', 'w')
 
-cfg = ModelConfig(dconf.input_shape, pa16j2d, num_pyramids=8, num_levels=4)
+cfg = ModelConfig(dconf.input_shape, pa16j2d, num_pyramids=8, num_levels=4, action_pyramids=[])
 
 """Load dataset"""
-dpath = datasetpath('Penn_Action')
-penn = PennAction(dpath, dconf, poselayout=pa16j2d, topology='frames',
+datapath = 'datasets/PennAction'
+penn = PennAction(datapath, dconf, poselayout=pa16j2d, topology='frames',
         use_gt_bbox=False)
 
 """Build and compile the network."""
 model = spnet.build(cfg)
+
+# The weights for predicting the bounding boxes are avaiable upon request.
+# If needed, please contact the authors by email.
 model.load_weights(
         'output/mpii_spnet_51b_741a720/weights_mpii_spnet_8b4l_050.hdf5')
 
@@ -71,7 +73,7 @@ bbox_val = predict_frame_bboxes(VALID_MODE)
 
 jsondata = [bbox_te, bbox_tr, bbox_val]
 
-filename = os.path.join(dpath, 'pred_bboxes_penn.json')
+filename = os.path.join(datapath, 'pred_bboxes_penn.json')
 with open(filename, 'w') as fid:
     json.dump(jsondata, fid)
 
