@@ -17,6 +17,7 @@ tags
 input
 output
 trained
+weights
 
 # Ignore bin, lib dirs
 bin

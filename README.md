@@ -1,24 +1,23 @@
 # Deep Human Action Recognition
 
-This software is provided as a supplementary material for our CVPR'18 paper:
-> 2D/3D Pose Estimation and Action Recognition using Multitask Deep Learning
+This software is provided as a supplementary material for our CVPR'18 and TPAMI'20 papers:
+> 2D/3D Pose Estimation and Action Recognition using Multitask Deep Learning (CVPR'18) [ [arXiv](https://arxiv.org/pdf/1802.09232.pdf) ]
 
 ![Predictions](images/preds.png)
 
 A demonstration video can be seen [here](https://www.youtube.com/watch?v=MNEZACbFA4Y&t=6s).
 
+> Multi-task Deep Learning for Real-Time 3D Human Pose Estimation and Action Recognition (TPAMI'20) [ [arXiv](https://arxiv.org/pdf/1912.08077.pdf) ]
+
+![Predictions](images/tpamifig.jpg)
+
 
 ## Notice
 
 This repo has been updated with our recent code for multi-task human
-pose estimation and action recognition, related to our submission [ [paper](https://arxiv.org/abs/1912.08077) ]:
-```
-Multi-task Deep Learning for Real-Time 3D Human Pose Estimation and Action Recognition
-```
+pose estimation and action recognition, related to our TPAMI'20 [ [paper](https://arxiv.org/pdf/1912.08077.pdf) ]. If you want to check our source code from our CVPR'18 [ [paper](https://arxiv.org/pdf/1802.09232.pdf) ], please checkout the [cvpr18 branch](https://github.com/dluvizon/deephar/tree/cvpr18).
 
-The README instructions, INSTALL, and auxiliary script will be updated accordinly during the next few days.
-
-For referring the source code version related to our CVPR'18 paper, please checkout the branch [cvpr18](https://github.com/dluvizon/deephar/tree/cvpr18).
+If you have trouble using this code and need an _urgent_ help, please send me an e-mail at `<[first name][last name] at gmail dot com>`.
 
 
 ## How to install
@@ -26,21 +25,26 @@ For referring the source code version related to our CVPR'18 paper, please check
 Please refer to the [installation guide](INSTALL.md).
 
 
-## Evaluation
+## Evaluation on Public Datasets
 
-<!--In order to reproduce the results reported in the paper, please make sure-->
-<!--that you are using the correct version by doing `git checkout v1.0-cvpr18`.-->
-
-### 2D pose estimation on MPII
+### 2D pose estimation on MPII (CVPR'18 model)
 
 The model trained on MPII data reached 91.2% on the test set using multi-crop
 and horizontal flipping data augmentation, and 89.1% on the validation set,
 single-crop.
 To reproduce results on validation, do:
-```
+```sh
   python3 exp/mpii/eval_mpii_singleperson.py output/eval-mpii
 ```
 The output will be stored in `output/eval-mpii/log.txt`.
+
+### Multitasking 2D pose estimation and action recognition
+
+The multitask model can be evaluated on MPII for pose estimation and on PennAction for action recognition by:
+```sh
+  python3 exp/pennaction/eval_penn_multitask.py output/eval-penn
+```
+The ourpur will be stored in `output/eval-penn/log.txt`
 
 ### 3D pose estimation on Human3.6M
 
@@ -78,9 +82,19 @@ To reproduce our scores, do:
 
 ## Citing
 
-Please cite our paper if this software (or any part of it) or weights are
+Please cite our papers if this software (including any part of it) or the provided weights are
 useful for you.
 ```
+@ARTICLE{Luvizon_2020_TPAMI,
+  author={D. {Luvizon} and D. {Picard} and H. {Tabia}},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={Multi-task Deep Learning for Real-Time 3D Human Pose Estimation and Action Recognition}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={1-1},
+}
+
 @InProceedings{Luvizon_2018_CVPR,
   author = {Luvizon, Diogo C. and Picard, David and Tabia, Hedi},
   title = {2D/3D Pose Estimation and Action Recognition Using Multitask Deep Learning},
@@ -94,3 +108,4 @@ useful for you.
 
 MIT License
 
+  

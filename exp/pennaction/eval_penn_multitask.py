@@ -19,11 +19,13 @@ from deephar.models import spnet
 from deephar.utils import *
 
 sys.path.append(os.path.join(os.getcwd(), 'exp/common'))
-from datasetpath import datasetpath
-
 from mpii_tools import eval_singleperson_pckh
 from penn_tools import eval_singleclip_generator
 from penn_tools import eval_multiclip_dataset
+
+sys.path.append(os.path.join(os.getcwd(), 'datasets'))
+import annothelper
+annothelper.check_pennaction_dataset()
 
 logdir = './'
 if len(sys.argv) > 1:
@@ -43,21 +45,35 @@ num_action_predictions = \
 
 
 """Load datasets"""
-mpii = MpiiSinglePerson(datasetpath('MPII'), dataconf=mpii_dataconf,
+mpii = MpiiSinglePerson('datasets/MPII', dataconf=mpii_dataconf,
         poselayout=pa16j2d)
 
-penn_seq = PennAction(datasetpath('Penn_Action'), pennaction_dataconf,
+# Check file with bounding boxes
+penn_data_path = 'datasets/PennAction'
+penn_bbox_file = 'penn_pred_bboxes_multitask.json'
+if os.path.isfile(os.path.join(penn_data_path, penn_bbox_file)) == False:
+    print (f'Error: file {penn_bbox_file} not found in {penn_data_path}!')
+    print (f'\nPlease download it from https://drive.google.com/file/d/1qXpEKF0d9KxmQdd2_QSIA1c3WGj1D3Y3/view?usp=sharing')
+    sys.stdout.flush()
+    sys.exit()
+
+penn_seq = PennAction(penn_data_path, pennaction_dataconf,
         poselayout=pa16j2d, topology='sequences', use_gt_bbox=False,
-        pred_bboxes_file='pred_bboxes_penn.json', clip_size=num_frames)
+        pred_bboxes_file='penn_pred_bboxes_multitask.json', clip_size=num_frames)
 
 
 """Build the full model"""
 full_model = spnet.build(cfg)
 
+weights_file = 'weights/weights_mpii+penn_ar_028.hdf5'
+if os.path.isfile(weights_file) == False:
+    print (f'Error: file {weights_file} not found!')
+    print (f'\nPlease download it from https://drive.google.com/file/d/106yIhqNN-TrI34SX81q2xbU-NczcQj6I/view?usp=sharing')
+    sys.stdout.flush()
+    sys.exit()
+
 """Load pre-trained weights from pose estimation and copy replica layers."""
-full_model.load_weights(
-        'output/penn_multimodel_trial-07-full_2e9fa5a/weights_mpii+penn_ar_028.hdf5',
-        by_name=True)
+full_model.load_weights(weights_file, by_name=True)
 
 """This call splits the model into its parts: pose estimation and action
 recognition, so we can evaluate each part separately on its respective datasets.
