@@ -21,7 +21,6 @@ from deephar.models import spnet
 from deephar.utils import *
 
 sys.path.append(os.path.join(os.getcwd(), 'exp/common'))
-from datasetpath import datasetpath
 
 from h36m_tools import eval_human36m_sc_error
 from ntu_tools import eval_multiclip_dataset
@@ -45,17 +44,27 @@ num_action_predictions = spnet.get_num_predictions(len(cfg.action_pyramids), cfg
 # h36m = Human36M(datasetpath('Human3.6M'), dataconf=human36m_dataconf,
         # poselayout=pa17j3d, topology='frames')
 
-ntu = Ntu(datasetpath('NTU'), ntu_dataconf, poselayout=pa17j3d,
-        topology='sequences', use_gt_bbox=True, clip_size=num_frames)#, num_S=1)
-# print ('WARNING!! USING ONLY S1 FOR EVALUATION!')
+ntu_data_path = 'datasets/NTU'
+
+ntu = Ntu(ntu_data_path, ntu_dataconf, poselayout=pa17j3d,
+        topology='sequences', use_gt_bbox=True, clip_size=num_frames) #, num_S=1)
+#print ('WARNING!! USING ONLY S1 FOR EVALUATION!')
 
 """Build the full model"""
 full_model = spnet.build(cfg)
 
+weights_file = 'output/ntu_spnet_trial-03-ft_replica_0ae2bf7/weights_3dp+ntu_ar_062.hdf5'
+
+if os.path.isfile(weights_file) == False:
+    print (f'Error: file {weights_file} not found!')
+    print (f'\nPlease download it from  https://drive.google.com/file/d/1I6GftXEkL5nohLA60Vi6faW0rvTZg6Kx/view?usp=sharing')
+    sys.stdout.flush()
+    sys.exit()
+
+
 """Load pre-trained weights from pose estimation and copy replica layers."""
-full_model.load_weights(
-        # 'output/ntu_spnet_trial-03-ft_replica_0ae2bf7/weights_3dp+ntu_ar_062.hdf5',
-        'output/ntu_spnet_trial_06_nopose_g_512a239/weights_3dp+ntu_ar_030.hdf5',
+full_model.load_weights(weights_file,
+        #'output/ntu_spnet_trial_06_nopose_g_512a239/weights_3dp+ntu_ar_030.hdf5',
         by_name=True)
 
 """Split model to simplify evaluation."""
@@ -80,4 +89,3 @@ ntu_te = BatchLoader(ntu, ['frame'], ['ntuaction'], TEST_MODE, batch_size=1,
 
 s = eval_multiclip_dataset(models[1], ntu,
         subsampling=ntu_dataconf.fixed_subsampling, logdir=logdir)
-

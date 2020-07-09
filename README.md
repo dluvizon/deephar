@@ -15,9 +15,9 @@ A demonstration video can be seen [here](https://www.youtube.com/watch?v=MNEZACb
 ## Notice
 
 This repo has been updated with our recent code for multi-task human
-pose estimation and action recognition, related to our TPAMI'20 [ [paper](https://arxiv.org/pdf/1912.08077.pdf) ]. If you want to check our source code from our CVPR'18 [ [paper](https://arxiv.org/pdf/1802.09232.pdf) ], please checkout the [cvpr18 branch](https://github.com/dluvizon/deephar/tree/cvpr18).
+pose estimation and action recognition, related to our TPAMI'20 [ [paper](https://arxiv.org/pdf/1912.08077.pdf) ]. If you are looking for the source code from our CVPR'18 [ [paper](https://arxiv.org/pdf/1802.09232.pdf) ], please checkout the [cvpr18 branch](https://github.com/dluvizon/deephar/tree/cvpr18).
 
-If you have trouble using this code and need an _urgent_ help, please send me an e-mail at `<[first name][last name] at gmail dot com>`.
+If you have trouble in using this code and need an _urgent_ help, please send me an e-mail at `<[first name][last name] at gmail dot com>`.
 
 
 ## How to install
@@ -38,7 +38,7 @@ To reproduce results on validation, do:
 ```
 The output will be stored in `output/eval-mpii/log.txt`.
 
-### Multitasking 2D pose estimation and action recognition
+### Multi-task model for 2D pose estimation and action recognition
 
 The multitask model can be evaluated on MPII for pose estimation and on PennAction for action recognition by:
 ```sh
@@ -46,7 +46,7 @@ The multitask model can be evaluated on MPII for pose estimation and on PennActi
 ```
 The output will be stored in `output/eval-penn/log.txt`
 
-### 3D pose estimation on Human3.6M
+### 3D pose estimation on Human3.6M (CVPR'18 model)
 
 This model was trained using MPII and Human3.6M data.
 Evaluation on Human3.6M is performed on the validation set.
@@ -59,26 +59,13 @@ Note that some scores on individual activities differ from reported results
 on the paper. That is because for the paper we computed scores using one frame
 every 60, instead of using one frame every 64. The average score is the same.
 
-### 2D action recognition on PennAction
+### Multi-task model for 3D pose estimation and action recognition
 
-For 2D action recognition, the pose estimation model was trained on mixed
-data from MPII and PennAction, and the full model for action recognition was
-trained and fine-tuned on PennAction only.
-To reproduce our scores, do:
+This model was trained simultaneously on MPII (2D pose), Human3.6 (3D pose) and NTU (action), and the results can be replicated on NTU for action recognition by:
 ```
-  python3 exp/pennaction/eval_penn_ar_pe_merge.py output/eval-penn
+  python3 exp/ntu/eval_ntu_multitask.py output/eval-ntu
 ```
-
-### 3D action recognition on NTU
-
-For 3D action recognition, the pose estimation model was trained on mixed
-data from MPII, Human3.6 and NTU, and the full model for action recognition was
-trained and fine-tuned on NTU only.
-To reproduce our scores, do:
-```
-  python3 exp/ntu/eval_ntu_ar_pe_merge.py
-```
-
+The output will be stored in `output/eval-ntu/log.txt`
 
 ## Citing
 

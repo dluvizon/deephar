@@ -59,8 +59,15 @@ def serialize_index_sequences(sequences):
 def ntu_load_annotations(dataset_path, eval_mode='cs',
         num_S=17, num_C=3, num_P=40, num_R=2, num_A=60):
 
+    # Saniry checks
     assert eval_mode in ['cs', 'cv'], \
-            'Invalid evaluation mode {}'.format(eval_mode)
+        'Invalid evaluation mode {}'.format(eval_mode)
+    
+    ntud_numpy_dir = os.path.join(dataset_path, 'nturgb+d_numpy')
+    ntud_images_dir = os.path.join(dataset_path, image_prefix)
+    for d in [ntud_numpy_dir, ntud_images_dir]:
+        assert os.path.isdir(d), \
+            f'Error: check your NTU dataset! `{d}` not found!'
 
     min_num_frames = np.inf
     max_num_frames = -np.inf
@@ -70,7 +77,6 @@ def ntu_load_annotations(dataset_path, eval_mode='cs',
             25, 27, 28, 31, 34, 35, 38]
     cv_train = [2, 3]
 
-    ntud_numpy_dir = os.path.join(dataset_path, 'nturgb+d_numpy')
     sequences = [[], [], []]
     seq_ids = [[], [], []]
     actions = [[], [], []]
