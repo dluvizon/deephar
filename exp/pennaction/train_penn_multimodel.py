@@ -81,10 +81,10 @@ ar_data_tr = BatchLoader(penn_seq, ['frame'], ['pennaction'], TRAIN_MODE,
 full_model = spnet.build(cfg)
 
 """Load pre-trained weights from pose estimation and copy replica layers."""
-full_model.load_weights(
-        # 'output/mpii_spnet_51_f47147e/weights_mpii_spnet_8b4l_039.hdf5',
-        'output/penn_multimodel_trial_15_only_mpii_pose_be215a3/weights_mpii+penn_ar_007.hdf5',
-        by_name=True)
+# Here it is recommended to load a model pre-trained (few epochs) on pose estimation!
+#full_model.load_weights(
+#        'output/mpii_spnet_51_f47147e/weights_mpii_spnet_8b4l_039.hdf5',
+#        by_name=True)
 
 # from keras.models import Model
 # full_model = Model(full_model.input,
@@ -140,13 +140,13 @@ steps_per_epoch = mpii.get_length(TRAIN_MODE) // batch_size_mpii
 fcallback, models = prepare_training(False, start_lr)
 trainer = MultiModelTrainer(models[1:], [ar_data_tr], workers=12,
         print_full_losses=True)
-# trainer.train(2, steps_per_epoch=steps_per_epoch, initial_epoch=0,
-        # end_of_epoch_callback=fcallback)
+trainer.train(2, steps_per_epoch=steps_per_epoch, initial_epoch=0,
+        end_of_epoch_callback=fcallback)
 
 """Joint learning the full model."""
 fcallback, models = prepare_training(True, start_lr)
 trainer = MultiModelTrainer(models, [pe_data_tr, ar_data_tr], workers=12,
         print_full_losses=True)
-trainer.train(30, steps_per_epoch=steps_per_epoch, initial_epoch=7,
+trainer.train(30, steps_per_epoch=steps_per_epoch, initial_epoch=2,
         end_of_epoch_callback=fcallback)
 
