@@ -1,6 +1,6 @@
 numpy>=1.13
 keras==2.1.4
-tensorflow-gpu==1.6.0
+tensorflow-gpu==1.15.4
 Pillow==5.1.0
 scipy
 h5py
