@@ -1,7 +1,7 @@
 numpy>=1.13
 keras==2.1.4
 tensorflow-gpu==1.6.0
-Pillow==5.1.0
+Pillow==9.3.0
 scipy
 h5py
 opencv-python
