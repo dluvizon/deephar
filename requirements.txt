@@ -1,5 +1,5 @@
 numpy>=1.13
-keras==2.1.4
+keras==3.15.0
 tensorflow-gpu==1.6.0
 Pillow==5.1.0
 scipy
